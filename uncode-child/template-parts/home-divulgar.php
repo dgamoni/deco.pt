@@ -5,7 +5,7 @@ $page = 1;
 $itemsPerPage = 4;
 
 $args = array(
-  'post_type'      => 'post', // explorar // noticia // divulgar
+  'post_type'      => 'divulgar', // explorar // noticia // divulgar
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',

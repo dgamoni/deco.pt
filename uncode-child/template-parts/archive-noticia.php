@@ -2,7 +2,7 @@
 
 
 $args_t = [
-	'taxonomy'      => [ 'category' ], // noticias
+	'taxonomy'      => [ 'noticias' ], // noticias
 	'orderby'       => 'id',
 	'order'         => 'ASC',
 	'hide_empty'    => false,
@@ -21,7 +21,7 @@ $page = 1;
 $itemsPerPage = 12;
 
 $args = array(
-  'post_type'      => 'post',  // noticia
+  'post_type'      => 'noticia',  // noticia
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',

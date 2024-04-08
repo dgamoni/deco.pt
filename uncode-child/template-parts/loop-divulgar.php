@@ -11,6 +11,13 @@ if ( $iframe ) {
 	$youtube = get_the_permalink( $post->ID);
 }
 
+$video_thumbnail = get_the_post_thumbnail_url( $post->ID);
+parse_str( parse_url( $youtube, PHP_URL_QUERY ), $my_array_of_vars );
+
+if ( !$video_thumbnail && isset($my_array_of_vars['v']) ) {
+	$video_thumbnail =  'https://img.youtube.com/vi/'.$my_array_of_vars['v'].'/hqdefault.jpg';
+} 
+
 ?>
 
 
@@ -20,7 +27,7 @@ if ( $iframe ) {
 				<div class="t-entry-visual-overlay">
 					<div class="t-entry-visual-overlay-in style-dark-bg" style="opacity: 0.5;"></div>
 				</div>
-				<img decoding="async" class="wp-image-86140" src="<?php echo get_the_post_thumbnail_url( $post->ID); ?>"  alt="">
+				<img decoding="async" class="wp-image-86140" src="<?php echo $video_thumbnail; ?>"  alt="">
 				
 				<div class="noticia-title divulgar-title">					
 						<?php echo $post->post_title; ?>

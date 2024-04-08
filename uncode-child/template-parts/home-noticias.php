@@ -2,7 +2,7 @@
 
 
 $page = 1;
-$itemsPerPage = 8;
+$itemsPerPage = 4;
 
 $args = array(
   'post_type'      => 'noticia', // explorar // noticia
@@ -18,7 +18,7 @@ $the_query = new WP_Query( $args );
 $total = $the_query->found_posts;
 
 if ( $total < $itemsPerPage ) {
-	$pagination_hide = 'pagination_hide';
+	$pagination_hide = '_pagination_hide';
 } else {
 	$pagination_hide = '';
 }
@@ -95,7 +95,7 @@ if ( $total < $itemsPerPage ) {
          window['resource_nav_pagination-filter'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter'), {
               totalItems: <?php echo $total; ?>,
               itemsPerPage: <?php echo $itemsPerPage; ?>,
-              visiblePages: 8,
+              visiblePages: 4,
               centerAlign: true,
               page: <?php echo $page; ?>,
             template: {

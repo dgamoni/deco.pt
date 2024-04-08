@@ -21,7 +21,7 @@ $page = 1;
 $itemsPerPage = 12;
 
 $args = array(
-  'post_type'      => 'post',  // divulgar
+  'post_type'      => 'divulgar',  // divulgar
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',

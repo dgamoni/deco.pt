@@ -1,4 +1,8 @@
+<?php
 
+$hero_articles = get_field('hero_articles');
+//var_dump($hero_articles);
+?>
 
 <div class="swiper-container">
   <div class="swiper-wrapper _grid-container">
@@ -6,11 +10,12 @@
       <?php
 
         $args = array(
-          'post_type'      => 'post', // explorar // noticia
-          'posts_per_page' => 9,
-          'post_status' => 'publish',
-          'order'       => 'DESC',
-          'orderby'     => 'date',
+          'post_type'      => array('explorar', 'noticia'), // explorar // noticia
+          'post__in'     => $hero_articles,
+          //'posts_per_page' => 9,
+          //'post_status' => 'publish',
+          //'order'       => 'DESC',
+          'orderby'     => 'post__in',
         );
 
         $the_query = new WP_Query( $args );
@@ -27,9 +32,29 @@
             $title0 = $post0->post_title;
             $title1 = $post1->post_title;
             $title2 = $post2->post_title;
-            $category0 = get_the_category($post0->ID);
-            $category1 = get_the_category($post1->ID);
-            $category2 = get_the_category($post2->ID);
+
+            // $category0 = get_the_category($post0->ID);
+            // $category1 = get_the_category($post1->ID);
+            // $category2 = get_the_category($post2->ID);
+
+            if ( $post0->post_type == 'noticia') {
+              $category0 = get_the_terms( $post0->ID, 'noticias' );
+            } else if ( $post0->post_type == 'explorar') {          
+              $category0 = get_the_terms($post0->ID, 'explorars' );
+            }
+
+            if ( $post1->post_type == 'noticia') {
+              $category1 = get_the_terms( $post1->ID, 'noticias' );
+            } else if ( $post1->post_type == 'explorar') {          
+              $category1 = get_the_terms($post1->ID, 'explorars' );
+            }
+
+            if ( $post2->post_type == 'noticia') {
+              $category2 = get_the_terms( $post2->ID, 'noticias' );
+            } else if ( $post2->post_type == 'explorar') {          
+              $category2 = get_the_terms($post2->ID, 'explorars' );
+            }            
+
             $permalink0 = get_the_permalink($post0->ID);
             $permalink1 = get_the_permalink($post1->ID);
             $permalink2 = get_the_permalink($post2->ID);

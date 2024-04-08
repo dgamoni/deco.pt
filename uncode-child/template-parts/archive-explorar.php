@@ -2,7 +2,7 @@
 
 
 $args_t = [
-	'taxonomy'      => [ 'category' ], // explorars
+	'taxonomy'      => [ 'explorars' ], // explorars
 	'orderby'       => 'id',
 	'order'         => 'ASC',
 	'hide_empty'    => false,
@@ -21,7 +21,7 @@ $page = 1;
 $itemsPerPage = 12;
 
 $args = array(
-  'post_type'      => 'post',  // explorar
+  'post_type'      => 'explorar',  // explorar
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',
@@ -60,7 +60,7 @@ if ( $total < $itemsPerPage ) {
 												
 												<li class="filter-show-all">
 													<span>
-														<a href="<?php echo home_url( '/explorar/'); ?>" data-id="" class="<?php echo $showall; ?> isotope-nav-link grid-nav-link">Mostrar todas</a>
+														<a href="<?php echo home_url( '/explorars/'); ?>" data-id="" class="<?php echo $showall; ?> isotope-nav-link grid-nav-link">Mostrar todas</a>
 													</span>
 												</li>
 																				
@@ -76,7 +76,7 @@ if ( $total < $itemsPerPage ) {
 
 													<li class="filter-cat-<?php echo $term->term_id; ?> filter-cat">
 														<span>
-															<a href="<?php echo home_url( '/explorar?category='.$term->term_id); ?>" data-id="<?php echo $term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link isotope-nav-link grid-nav-link"><?php echo $term->name; ?></a>
+															<a href="<?php echo home_url( '/explorars?category='.$term->term_id); ?>" data-id="<?php echo $term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link isotope-nav-link grid-nav-link"><?php echo $term->name; ?></a>
 														</span>
 													</li>
 																																

@@ -7,7 +7,7 @@ function get_noticias() {
 
 
 		$page = $_POST['page'];
-		$itemsPerPage = 8;
+		$itemsPerPage = 4;
 
 		$args = array(
 		  'post_type'      => 'noticia', // explorar // noticia
@@ -55,7 +55,7 @@ function get_noticias() {
 					         window['resource_nav_pagination-filter'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter'), {
 					              totalItems: <?php echo $total; ?>,
 					              itemsPerPage: <?php echo $itemsPerPage; ?>,
-					              visiblePages: 8,
+					              visiblePages: 4,
 					              centerAlign: true,
 					              page: <?php echo $page; ?>,
 					            template: {
@@ -148,10 +148,10 @@ function get_divulgar() {
 		$itemsPerPage = 4;
 
 		$args = array(
-		  'post_type'      => 'post', // explorar // noticia // divulgar
+		  'post_type'      => 'divulgar', // explorar // noticia // divulgar
 		  'post_status' => 'publish',
-		  'order'       => 'DESC',
-		  'orderby'     => 'date',
+		  //'order'       => 'DESC',
+		  //'orderby'     => 'date',
 		  'posts_per_page' => $itemsPerPage,
 		  'paged'	=> $page,
 		);
@@ -285,14 +285,27 @@ function get_noticiafilter() {
 		$itemsPerPage = 12;
 
 		$args = array(
-		  'post_type'      => 'post',  // noticia
+		  'post_type'      => 'noticia',  // noticia
 		  'post_status' => 'publish',
 		  'order'       => 'DESC',
 		  'orderby'     => 'date',
-		  'cat' 		=> $cat,
+		  //'cat' 		=> $cat,
 		  'posts_per_page' => $itemsPerPage,
 		  'paged'	=> $page,
 		);
+
+		if ( isset($cat)) {
+
+			$args['tax_query'][] = [
+				'relation' => 'AND',
+				[
+					'taxonomy' => 'noticias',
+					'field'    => 'id',
+					'terms'    =>  $cat
+				]
+			];
+
+		}
 
 		$the_query = new WP_Query( $args );
 
@@ -432,11 +445,11 @@ function get_divulgarfilter() {
 		$itemsPerPage = 12;
 
 		$args = array(
-		  'post_type'      => 'post',  // divulgar
+		  'post_type'      => 'divulgar',  // divulgar
 		  'post_status' => 'publish',
 		  'order'       => 'DESC',
 		  'orderby'     => 'date',
-		  'cat' 		=> $cat,
+		  //'cat' 		=> $cat,
 		  'posts_per_page' => $itemsPerPage,
 		  'paged'	=> $page,
 		);
@@ -579,14 +592,27 @@ function get_explorarfilter() {
 		$itemsPerPage = 12;
 
 		$args = array(
-		  'post_type'      => 'post',  // explorar
+		  'post_type'      => 'explorar',  // explorar
 		  'post_status' => 'publish',
 		  'order'       => 'DESC',
 		  'orderby'     => 'date',
-		  'cat' 		=> $cat,
+		  //'cat' 		=> $cat,
 		  'posts_per_page' => $itemsPerPage,
 		  'paged'	=> $page,
 		);
+
+		if ( isset($cat)) {
+
+			$args['tax_query'][] = [
+				'relation' => 'AND',
+				[
+					'taxonomy' => 'explorars',
+					'field'    => 'id',
+					'terms'    =>  $cat
+				]
+			];
+
+		}
 
 		$the_query = new WP_Query( $args );
 

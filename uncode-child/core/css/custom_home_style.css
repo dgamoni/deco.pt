@@ -41,7 +41,7 @@
     height: 100%;
     position: absolute;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .subslide-right {
@@ -61,7 +61,7 @@
     line-height: 25px;
     letter-spacing: 0px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     padding-top: 5px;
 }
 .slider-cat {
