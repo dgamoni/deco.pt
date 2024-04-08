@@ -118,6 +118,38 @@ a.curso_link:hover {
 	object-fit: cover;
 }
 
+/*download_formacao*/
+
+.pdf_link {
+    margin-top: 15px;
+}
+a.curso_link {
+    color: #ffffff;
+    background-color: #228848;
+    border-color: #228848;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 9px;
+    padding: 7px 7px;
+    margin-top: 7px;
+    display: inline-block;
+}
+.download_formacao_links {
+    display: flex;
+    max-width: 390px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.dowload-row {
+    padding: 36px 36px 36px 36px;
+}
+
+.single-curso .main-container .row-container .double-bottom-padding {
+     padding-bottom: 0px; 
+}
+
+
 
 @media (max-width: 1098px) {
 	.curso_item .t-entry-title {
