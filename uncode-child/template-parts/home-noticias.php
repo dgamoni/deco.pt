@@ -6,7 +6,7 @@ $itemsPerPage = 8;
 
 $args = array(
   'post_type'      => 'noticia', // explorar // noticia
-  'post_status' => 'any', // publish
+  'post_status' => 'publish', // publish
   'order'       => 'DESC',
   'orderby'     => 'date',
   'posts_per_page' => $itemsPerPage,

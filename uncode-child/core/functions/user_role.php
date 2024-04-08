@@ -41,7 +41,7 @@ function add_noticias_manager_role(){
     add_role(
         'noticias_manager',
         'Noticias Manager',
-        array(
+        array(           
             'read_noticia' => true,
             'edit_noticia' => true,
             'delete_noticia' => true,
@@ -64,17 +64,32 @@ function add_noticias_manager_role(){
 function add_noticias_role_caps() {
     $roles = array('noticias_manager');
     foreach($roles as $the_role) {
-        $role = get_role($the_role);
+        $role = get_role($the_role); 
+
         $role->add_cap( 'read_noticia' );
+        $role->add_cap( 'read_noticias' );
+        $role->add_cap( 'read_private_noticia' );
+        $role->add_cap( 'read_private_noticias' );
+
+
         $role->add_cap( 'edit_noticia');
+        $role->add_cap( 'edit_noticias');
+        $role->add_cap( 'edit_private_noticia');
+        $role->add_cap( 'edit_private_noticias');
+        $role->add_cap( 'edit_published_noticias');
+        $role->add_cap( 'edit_noticia_terms');
+        $role->add_cap( 'edit_others_noticias');
+
         $role->add_cap( 'delete_noticia' );
         $role->add_cap( 'publish_noticia' );
-        $role->add_cap( 'read_private_noticia' );
+        $role->add_cap( 'read_private_noticia' ); // assign_explorar_terms assign_explorars create_explorars delete_explorar_terms delete_explorars delete_private_explorars delete_published_explorars deleteexplorars edit_explorar_terms edit_explorars edit_others_explorars edit_private_explorars edit_published_explorars manage_explorar_terms publish_explorars read_private_explorars
+
         $role->add_cap( 'read_explorar' );
         $role->add_cap( 'edit_explorar' );
         $role->add_cap( 'delete_explorar' );
         $role->add_cap( 'publish_explorar' );
         $role->add_cap( 'read_private_explorar' );
+
         $role->add_cap( 'manage_categories' );
         $role->add_cap( 'manage_noticias' );
         $role->add_cap( 'manage_explorars' );
