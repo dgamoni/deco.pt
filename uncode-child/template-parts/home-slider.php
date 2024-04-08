@@ -40,19 +40,19 @@ $hero_articles = get_field('hero_articles');
             if ( $post0->post_type == 'noticia') {
               $category0 = get_the_terms( $post0->ID, 'noticias' );
             } else if ( $post0->post_type == 'explorar') {          
-              $category0 = get_the_terms($post0->ID, 'explorars' );
+              $category0 = get_the_terms($post0->ID, 'explora' );
             }
 
             if ( $post1->post_type == 'noticia') {
               $category1 = get_the_terms( $post1->ID, 'noticias' );
             } else if ( $post1->post_type == 'explorar') {          
-              $category1 = get_the_terms($post1->ID, 'explorars' );
+              $category1 = get_the_terms($post1->ID, 'explora' );
             }
 
             if ( $post2->post_type == 'noticia') {
               $category2 = get_the_terms( $post2->ID, 'noticias' );
             } else if ( $post2->post_type == 'explorar') {          
-              $category2 = get_the_terms($post2->ID, 'explorars' );
+              $category2 = get_the_terms($post2->ID, 'explora' );
             }            
 
             $permalink0 = get_the_permalink($post0->ID);
@@ -61,7 +61,7 @@ $hero_articles = get_field('hero_articles');
             ?>
                 <div class="swiper-slide sub">
                   
-                  <a class="subslide-left" href="<?php echo $permalink0; ?>" style="background-image: url(<?php echo $slide_image_url0; ?>);" target="_blank">
+                  <a class="subslide-left" href="<?php echo $permalink0; ?>" style="background-image: url(<?php echo $slide_image_url0; ?>);">
                     <div class="subslide-left-content">
                       <div class="slider-content">
                         <div class="slider-cat"><?php echo $category0[0]->name; ?></div>
@@ -72,7 +72,7 @@ $hero_articles = get_field('hero_articles');
 
                   <div class="subslide-right">
 
-                      <a href="<?php echo $permalink1; ?>" class="sub-slide" style="background-image: url(<?php echo $slide_image_url1; ?>);" target="_blank">
+                      <a href="<?php echo $permalink1; ?>" class="sub-slide" style="background-image: url(<?php echo $slide_image_url1; ?>);">
                         <div class="sub-slide-content">
                             <div class="slider-content">
                               <div class="slider-cat"><?php echo $category1[0]->name; ?></div>
@@ -81,7 +81,7 @@ $hero_articles = get_field('hero_articles');
                         </div>
                       </a>
                       
-                      <a href="<?php echo $permalink2; ?>" class="sub-slide" style="background-image: url(<?php echo $slide_image_url2; ?>);" target="_blank">
+                      <a href="<?php echo $permalink2; ?>" class="sub-slide" style="background-image: url(<?php echo $slide_image_url2; ?>);">
                         <div class="sub-slide-content">
                             <div class="slider-content">
                               <div class="slider-cat"><?php echo $category2[0]->name; ?></div>

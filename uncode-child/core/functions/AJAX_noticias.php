@@ -606,7 +606,7 @@ function get_explorarfilter() {
 			$args['tax_query'][] = [
 				'relation' => 'AND',
 				[
-					'taxonomy' => 'explorars',
+					'taxonomy' => 'explora',
 					'field'    => 'id',
 					'terms'    =>  $cat
 				]
@@ -766,7 +766,7 @@ function get_explorarfilter_new() {
 			$args['tax_query'][] = [
 				'relation' => 'AND',
 				[
-					'taxonomy' => 'explorars',
+					'taxonomy' => 'explora',
 					'field'    => 'id',
 					'terms'    =>  $cat
 				]
@@ -806,7 +806,7 @@ function get_explorarfilter_new() {
 					</article>
 
 					<div class="pagination_text">
-						<a href="<?php echo home_url( '/explorars/' ); ?>" target="_blank">ver todos os destaques</a>
+						<a href="<?php echo home_url( '/explora/' ); ?>">ver todos os destaques</a>
 					</div>	
 
 					<script>

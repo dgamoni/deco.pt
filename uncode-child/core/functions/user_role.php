@@ -18,9 +18,9 @@ function cptuisupport_override_ceventfeature( $args, $tax_slug, $orig_args ) {
 }
 add_action( 'cptui_pre_register_taxonomy', 'cptuisupport_override_ceventfeature', 10, 3 );
 
-function cptuisupport_override_explorars( $args, $tax_slug, $orig_args ) {
+function cptuisupport_override_explorars2( $args, $tax_slug, $orig_args ) {
     // We only want to affect these for one taxonomy, so return early if its not that one
-    if ( 'explorars' !== $tax_slug ) {
+    if ( 'explora' !== $tax_slug ) {
         return $args;
     }
 
@@ -34,7 +34,7 @@ function cptuisupport_override_explorars( $args, $tax_slug, $orig_args ) {
     
     return $args;
 }
-add_action( 'cptui_pre_register_taxonomy', 'cptuisupport_override_explorars', 10, 3 );
+add_action( 'cptui_pre_register_taxonomy', 'cptuisupport_override_explorars2', 10, 3 );
 
 
 function add_noticias_manager_role(){
@@ -55,11 +55,13 @@ function add_noticias_manager_role(){
             'upload_files' => true,
             'manage_categories' => true,
             'manage_noticias' => true,
-            'manage_explorars' => true,
+            'manage_explora' => true,
+            'assign_explora' => true,
+            'assign_explora_terms' => true,
         )
     );
 }
-//add_action( 'admin_init', 'add_noticias_manager_role', 4 );
+add_action( 'admin_init', 'add_noticias_manager_role', 4 );
 
 function add_noticias_role_caps() {
     $roles = array('noticias_manager');
@@ -92,11 +94,15 @@ function add_noticias_role_caps() {
 
         $role->add_cap( 'manage_categories' );
         $role->add_cap( 'manage_noticias' );
-        $role->add_cap( 'manage_explorars' );
-
+        $role->add_cap( 'manage_explora' );
+        $role->add_cap( 'assign_explora' );
+        $role->add_cap( 'assign_explora_terms' );
+        //$role->add_cap( 'assign_explora' );
+        $role->add_cap( 'edit_explora' );
+        $role->add_cap( 'edit_explora_terms' );
     }
 }
-//add_action('admin_init', 'add_noticias_role_caps', 5 );
+add_action('admin_init', 'add_noticias_role_caps', 5 );
 
 
 

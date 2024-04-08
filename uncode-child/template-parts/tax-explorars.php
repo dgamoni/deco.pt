@@ -10,7 +10,7 @@ $parent_slug = '';
 
 if ( isset($queried_object->parent)) {
 	$parent_id = $queried_object->parent;
-	$parent = get_term( $parent_id , 'explorars' );
+	$parent = get_term( $parent_id , 'explora' );
 	//var_dump($parent);
 	$parent_name = $parent->name;
 	$parent_description = $parent->description;
@@ -38,7 +38,7 @@ if ( isset($term_id)) {
 	$args['tax_query'][] = [
 		'relation' => 'AND',
 		[
-			'taxonomy' => 'explorars',
+			'taxonomy' => 'explora',
 			'field'    => 'id',
 			'terms'    =>  $term_id
 		]
@@ -97,7 +97,7 @@ if ( $total < $itemsPerPage ) {
 								if ( $parent_id ) :
 
 									$child_terms = get_terms( [
-										'taxonomy' => 'explorars', 
+										'taxonomy' => 'explora', 
 										'hide_empty' => false,
 										'child_of'	=> $parent_id,
 									] );
@@ -120,7 +120,7 @@ if ( $total < $itemsPerPage ) {
 
 															<li class="filter-cat-<?php echo $child_term->term_id; ?> slider-cat filter-cat">
 																<span>
-																	<a href="<?php echo home_url( 'explorars'. $parent_slug. '/'. $child_term->slug); ?>" data-id="<?php echo $child_term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link-new isotope-nav-link grid-nav-link"><?php echo $child_term->name; ?></a>
+																	<a href="<?php echo home_url( 'explora'. $parent_slug. '/'. $child_term->slug); ?>" data-id="<?php echo $child_term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link-new isotope-nav-link grid-nav-link"><?php echo $child_term->name; ?></a>
 																</span>
 															</li>
 
@@ -148,7 +148,7 @@ if ( $total < $itemsPerPage ) {
 
 															<li class="filter-cat-<?php echo $child_term->term_id; ?> slider-cat filter-cat">
 																<span>
-																	<a href="<?php echo home_url( 'explorars'. $parent_slug. '/'. $child_term->slug); ?>" data-id="<?php echo $child_term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link-new isotope-nav-link grid-nav-link"><?php echo $child_term->name; ?></a>
+																	<a href="<?php echo home_url( 'explora'. $parent_slug. '/'. $child_term->slug); ?>" data-id="<?php echo $child_term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link-new isotope-nav-link grid-nav-link"><?php echo $child_term->name; ?></a>
 																</span>
 															</li>
 
@@ -189,7 +189,7 @@ if ( $total < $itemsPerPage ) {
 								<div class="resource-nav-pagination-filter <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter"></div>
 							</article> 
 							<div class="pagination_text">
-								<a href="<?php echo home_url( '/explorars/' ); ?>">ver todos os destaques</a>
+								<a href="<?php echo home_url( '/explora/' ); ?>">ver todos os destaques</a>
 							</div>		
 
 						</div>

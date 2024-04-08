@@ -1,7 +1,7 @@
 <?php
 
 //$category = get_the_category($post->ID);
-$category = get_the_terms( $post->ID, 'explorars' );
+$category = get_the_terms( $post->ID, 'explora' );
 
 // $queried_object = get_queried_object();
 

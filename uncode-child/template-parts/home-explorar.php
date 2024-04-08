@@ -2,7 +2,7 @@
 
 
 $terms = get_terms( [
-	'taxonomy' => 'explorars', // explorar
+	'taxonomy' => 'explora', // explorar
 	'hide_empty' => false,
 	'parent'	=> 0,
 ] );
@@ -60,7 +60,7 @@ $terms = get_terms( [
 															<?php 
 
 																$child_terms = get_terms( [
-																	'taxonomy' => 'explorars', // explorar
+																	'taxonomy' => 'explora', // explorar
 																	'hide_empty' => false,
 																	'child_of'	=> $term->term_id,
 																] );
@@ -69,7 +69,7 @@ $terms = get_terms( [
 
 																	?>
 																		<div class="post-wraper <?php echo $child_term->term_id; ?>">
-																			<a href="<?php echo home_url( 'explorars/'. $term->slug. '/'. $child_term->slug); ?>">
+																			<a href="<?php echo home_url( 'explora/'. $term->slug. '/'. $child_term->slug); ?>">
 																				<?php echo $child_term->name; ?>
 																			</a>
 																		</div>
@@ -111,7 +111,7 @@ $terms = get_terms( [
 															<?php 
 
 																$child_terms = get_terms( [
-																	'taxonomy' => 'explorars', // explorar
+																	'taxonomy' => 'explora', // explorar
 																	'hide_empty' => false,
 																	'child_of'	=> $term->term_id,
 																] );
@@ -120,7 +120,7 @@ $terms = get_terms( [
 
 																	?>
 																		<div class="post-wraper <?php echo $child_term->term_id; ?>">
-																			<a href="<?php echo home_url( 'explorars/'. $term->slug. '/'. $child_term->slug); ?>" target="_blank">
+																			<a href="<?php echo home_url( 'explora/'. $term->slug. '/'. $child_term->slug); ?>">
 																				<?php echo $child_term->name; ?>
 																			</a>
 																		</div>

@@ -26,6 +26,11 @@ $category = get_the_terms( $post->ID, 'noticias' );
 				<?php //echo get_the_excerpt( $post->ID ); ?> 
 				<?php kama_excerpt(); ?>
 			</div>
+			<div class="readmore">
+				<span class="btn-container">
+					<a href="<?php echo get_the_permalink( $post->ID); ?>" class="custom-link btn btn-sm border-width-0 btn-color-210407 btn-flat btn-icon-left exitNotifierLink" rel="nofollow undefined">LER MAIS</a>
+				</span>				
+			</div>
 
 	</div>
 

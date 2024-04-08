@@ -2,7 +2,7 @@
 
 
 $args_t = [
-	'taxonomy'      => [ 'explorars' ], // explorars
+	'taxonomy'      => [ 'explora' ], // explorars
 	'orderby'       => 'id',
 	'order'         => 'ASC',
 	'hide_empty'    => false,
@@ -60,7 +60,7 @@ if ( $total < $itemsPerPage ) {
 												
 												<li class="filter-show-all">
 													<span>
-														<a href="<?php echo home_url( '/explorars/'); ?>" data-id="" class="<?php echo $showall; ?> isotope-nav-link grid-nav-link">Mostrar todas</a>
+														<a href="<?php echo home_url( '/explora/'); ?>" data-id="" class="<?php echo $showall; ?> isotope-nav-link grid-nav-link">Mostrar todas</a>
 													</span>
 												</li>
 																				
@@ -76,7 +76,7 @@ if ( $total < $itemsPerPage ) {
 
 													<li class="filter-cat-<?php echo $term->term_id; ?> filter-cat">
 														<span>
-															<a href="<?php echo home_url( '/explorars?category='.$term->term_id); ?>" data-id="<?php echo $term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link isotope-nav-link grid-nav-link"><?php echo $term->name; ?></a>
+															<a href="<?php echo home_url( '/explora?category='.$term->term_id); ?>" data-id="<?php echo $term->term_id; ?>" class="<?php echo $active; ?> explorar-filter-link isotope-nav-link grid-nav-link"><?php echo $term->name; ?></a>
 														</span>
 													</li>
 																																
