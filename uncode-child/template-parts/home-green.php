@@ -17,11 +17,11 @@
 							<div class="uncell no-block-padding">
 								<div class="uncont">
 									<div class="vc_custom_heading_wrap ">
-										<div class="heading-text el-text">
+		<!-- 								<div class="heading-text el-text">
 											<h2 class="h2 fontspace-210350 green-h2">
 												<span>APOIAR</span>
 											</h2>
-										</div>
+										</div> -->
 										<div class="clear"></div>
 									</div>
 
@@ -55,8 +55,8 @@
 									</div>
 
 									<div class="green-title info">Quer obter uma</br>informação</br> personalizada</div>
-									<div class="green-description">Lorem ipsum dolor sit amet, consectetuer</div>
-									<span class="btn-container btn-inline"><a href="#" class="custom-link btn btn-sm border-width-0 btn-color-custom btn-flat btn-icon-left" target="_blank">SABER MAIS</a></span>							
+									
+									<span class="btn-container btn-inline"><a href="https://deco.pt/deco-consigo#aconselhamento" class="custom-link btn btn-sm border-width-0 btn-color-custom btn-flat btn-icon-left" >SABER MAIS</a></span>							
 							
 							</div>	
 
@@ -79,9 +79,9 @@
 										</svg>
 									</div>
 
-									<div class="green-title fin">Quer obter uma</br>informação</br> personalizada</div>
-									<div class="green-description">Lorem ipsum dolor sit amet, consectetuer</div>
-									<span class="btn-container btn-inline"><a href="#" class="custom-link btn btn-sm border-width-0 btn-color-custom btn-flat btn-icon-left" target="_blank">SABER MAIS</a></span>							
+									<div class="green-title fin">Quer orientação</br>financeira</br> especializada</div>
+									
+									<span class="btn-container btn-inline"><a href="https://crm.gasdeco.net/Area%20Publica/Login/Login.aspx" class="custom-link btn btn-sm border-width-0 btn-color-custom btn-flat btn-icon-left" target="_blank">SABER MAIS</a></span>							
 							</div>	
 
 						</article> 
@@ -100,9 +100,9 @@
 										</svg>
 									</div>
 
-									<div class="green-title nosa">Quer obter uma</br>informação</br> personalizada</div>
-									<div class="green-description">Lorem ipsum dolor sit amet, consectetuer</div>
-									<span class="btn-container btn-inline"><a href="#" class="custom-link btn btn-sm border-width-0 btn-color-custom btn-flat btn-icon-left" target="_blank">SABER MAIS</a></span>							
+									<div class="green-title nosa">Quer a nossa</br>intervenção na resolução</br> da sua situação</div>
+																	
+									<span class="btn-container btn-inline"><a href="https://crm.gasdeco.net/Area%20Publica/Login/Login.aspx" class="custom-link btn btn-sm border-width-0 btn-color-custom btn-flat btn-icon-left" target="_blank">SABER MAIS</a></span>							
 							</div>	
 
 						</article> 

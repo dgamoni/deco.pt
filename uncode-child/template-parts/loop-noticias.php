@@ -14,12 +14,16 @@ $category = get_the_category($post->ID);
 			</a>
 
 			<div class="slider-cat"><?php echo $category[0]->name; ?></div>
+			<div class="noticia-date"><?php echo get_the_date( 'd/m/Y' ); ?></div>
 			<div class="noticia-title">
 				<a tabindex="-1" href="<?php echo get_the_permalink( $post->ID); ?>">
 					<?php echo $post->post_title; ?>
 				</a>
 			</div>
-			<div class="noticia-descript">by <?php echo get_the_author(); ?> <?php echo get_the_date( 'd M / Y' ); ?></div>
+			<div class="noticia-descript">
+				<?php //echo get_the_excerpt( $post->ID ); ?> 
+				<?php kama_excerpt(); ?>
+			</div>
 
 	</div>
 

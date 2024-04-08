@@ -15,7 +15,8 @@ function add_noticias_manager_role(){
             'delete_explorar' => true,
             'publish_explorar' => true,
             'read_private_explorar' => true,
-            'upload_files' => true
+            'upload_files' => true,
+            'manage_categories' => true,
         )
     );
 }
@@ -35,9 +36,34 @@ function add_noticias_role_caps() {
         $role->add_cap( 'delete_explorar' );
         $role->add_cap( 'publish_explorar' );
         $role->add_cap( 'read_private_explorar' );
+        $role->add_cap( 'manage_categories' );
 
     }
 }
 add_action('admin_init', 'add_noticias_role_caps', 5 );
+
+
+
+// Remove Categories and Tags
+add_action('init', 'myprefix_remove_tax');
+function myprefix_remove_tax() {
+    if ( current_user_can('noticias_manager') ) { 
+        register_taxonomy('category', array());
+        register_taxonomy('post_tag', array());
+    }
+}
+
+//Hide Categories and Tags
+if ( current_user_can('noticias_manager') ) {
+    function hide_post_page_options() {
+        global $post;
+        $hide_post_options = "<style type=\"text/css\"> .post-type-post.taxonomy-post_tag, .post-type-post.taxonomy-category { display: none; }</style>";
+        print($hide_post_options);
+    }
+    add_action( 'admin_head', 'hide_post_page_options'  );
+}
+
+
+
 
 
