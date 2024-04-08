@@ -47,7 +47,7 @@ $terms = get_terms( [
 
 											<?php if ( $key < round(count($terms)/2) ): ?>
 												<div class="panel panel-default wpb_accordion_section group">
-													<div class="panel-heading wpb_accordion_header ui-accordion-header" role="tab">
+													<div class="panel-heading wpb_accordion_header ui-accordion-header termcolor-<?php echo $key; ?>" role="tab">
 														<p class="panel-title">
 															<a data-toggle="collapse" data-parent="#accordion_867865580" href="#term-<?php echo $term->term_id;?>" class="">
 																<span><?php echo $term->name; ?></span>
@@ -110,7 +110,7 @@ $terms = get_terms( [
 
 											<?php if ( $key >= round(count($terms)/2) ): ?>
 												<div class="panel panel-default wpb_accordion_section group">
-													<div class="panel-heading wpb_accordion_header ui-accordion-header" role="tab">
+													<div class="panel-heading wpb_accordion_header ui-accordion-header termcolor-<?php echo $key; ?>" role="tab">
 														<p class="panel-title">
 															<a data-toggle="collapse" data-parent="#accordion_867865580_" href="#term-<?php echo $term->term_id;?>" class="">
 																<span><?php echo $term->name; ?></span>

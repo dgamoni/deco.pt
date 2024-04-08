@@ -423,6 +423,9 @@
 .explorar-block  .panel-title.active > a span:after {
   color: white !important;
 }
+.explorar-block  .panel-title.active > a span:after {
+    transform: translateY(-50%) translateX(0%) rotate(90deg);
+}
 .explorar-block .panel-body {
     padding-left: 50px;
   }
@@ -453,7 +456,40 @@ font-family: "uncodeicon";
           border-color: #eaeaea;
 }
 
-
-
+.explorar-block .panel-group .panel-heading.termcolor-1,
+.explorar-block .panel-group .panel-heading.termcolor-10 {
+    background-color: rgb(12 114 60 / 96%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-2,
+.explorar-block .panel-group .panel-heading.termcolor-11 {
+    background-color: rgb(12 114 60 / 94%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-3,
+.explorar-block .panel-group .panel-heading.termcolor-12 {
+    background-color: rgb(12 114 60 / 90%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-4,
+.explorar-block .panel-group .panel-heading.termcolor-13 {
+    background-color: rgb(12 114 60 / 86%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-5,
+.explorar-block .panel-group .panel-heading.termcolor-14 {
+    background-color: rgb(12 114 60 / 82%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-6,
+.explorar-block .panel-group .panel-heading.termcolor-15 {
+    background-color: rgb(12 114 60 / 78%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-7,
+.explorar-block .panel-group .panel-heading.termcolor-16 {
+    background-color: rgb(12 114 60 / 74%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-8,
+.explorar-block .panel-group .panel-heading.termcolor-17 {
+    background-color: rgb(12 114 60 / 70%);;
+}
+.explorar-block .panel-group .panel-heading.termcolor-18 {
+    background-color: rgb(12 114 60 / 66%);;
+}
 
 
