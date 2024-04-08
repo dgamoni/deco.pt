@@ -50,8 +50,11 @@ $terms = get_terms( [
 												<div class="panel panel-default wpb_accordion_section group">
 													<div class="panel-heading wpb_accordion_header ui-accordion-header termcolor-<?php echo $key; ?>" role="tab">
 														<p class="panel-title">
-															<a data-toggle="collapse" data-parent="#accordion_867865580" href="#term-<?php echo $term->term_id;?>" class="">
-																<span><?php echo $term->name; ?></span>
+															<a href="<?php echo home_url( 'explora/'. $term->slug. '/'); ?>" class="term_parent_link">
+																<?php echo $term->name; ?>
+															</a>
+															<a data-toggle="collapse" data-parent="#accordion_867865580" href="#term-<?php echo $term->term_id;?>" class="term_parent_collapse">
+																<span></span>
 															</a>
 														</p>
 													</div>
@@ -101,8 +104,11 @@ $terms = get_terms( [
 												<div class="panel panel-default wpb_accordion_section group">
 													<div class="panel-heading wpb_accordion_header ui-accordion-header termcolor-<?php echo $key; ?>" role="tab">
 														<p class="panel-title">
-															<a data-toggle="collapse" data-parent="#accordion_867865580_" href="#term-<?php echo $term->term_id;?>" class="">
-																<span><?php echo $term->name; ?></span>
+															<a href="<?php echo home_url( 'explora/'. $term->slug. '/'); ?>" class="term_parent_link">
+																<?php echo $term->name; ?>
+															</a>
+															<a data-toggle="collapse" data-parent="#accordion_867865580_" href="#term-<?php echo $term->term_id;?>" class="term_parent_collapse">
+																<span></span>
 															</a>
 														</p>
 													</div>

@@ -145,7 +145,7 @@ function get_divulgar() {
 
 
 		$page = $_POST['page'];
-		$itemsPerPage = 4;
+		$itemsPerPage = 3;
 
 		$args = array(
 		  'post_type'      => 'divulgar', // explorar // noticia // divulgar
@@ -188,12 +188,22 @@ function get_divulgar() {
 					<script>
 						jQuery(document).ready(function($) {
 
+					        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+					          disableOn: 700,
+					          type: 'iframe',
+					          mainClass: 'mfp-fade',
+					          removalDelay: 160,
+					          preloader: false,
+
+					          fixedContentPos: false
+					        });
+
 							//var page = e.page;
 
 					         window['resource_nav_pagination-filter2'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter2'), {
 					              totalItems: <?php echo $total; ?>,
 					              itemsPerPage: <?php echo $itemsPerPage; ?>,
-					              visiblePages: 4,
+					              visiblePages: 3,
 					              centerAlign: true,
 					              page: <?php echo $page; ?>,
 					            template: {
@@ -489,6 +499,16 @@ function get_divulgarfilter() {
 					<script>
 						jQuery(document).ready(function($) {
 
+					        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+					          disableOn: 700,
+					          type: 'iframe',
+					          mainClass: 'mfp-fade',
+					          removalDelay: 160,
+					          preloader: false,
+
+					          fixedContentPos: false
+					        });
+        
 							//var page = e.page;
 
 					         window['resource_nav_pagination-filter'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter'), {

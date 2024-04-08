@@ -8,7 +8,7 @@ $parent_description = '';
 $parent_id = false;
 $parent_slug = '';
 
-if ( isset($queried_object->parent)) {
+if ( isset($queried_object->parent) && !empty($queried_object->parent) ) {
 	$parent_id = $queried_object->parent;
 	$parent = get_term( $parent_id , 'explora' );
 	//var_dump($parent);
@@ -17,6 +17,8 @@ if ( isset($queried_object->parent)) {
 	$parent_slug = '/' . $parent->slug;
 } else {
 	$parent_name = $queried_object->name;
+	$parent_description = $queried_object->description;
+	$parent_id = $queried_object->term_id;
 }
 
 

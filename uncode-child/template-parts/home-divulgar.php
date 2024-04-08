@@ -2,7 +2,7 @@
 
 
 $page = 1;
-$itemsPerPage = 4;
+$itemsPerPage = 3;
 
 $args = array(
   'post_type'      => 'divulgar', // explorar // noticia // divulgar
@@ -95,7 +95,7 @@ if ( $total < $itemsPerPage ) {
          window['resource_nav_pagination-filter2'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter2'), {
               totalItems: <?php echo $total; ?>,
               itemsPerPage: <?php echo $itemsPerPage; ?>,
-              visiblePages: 4,
+              visiblePages: 3,
               centerAlign: true,
               page: <?php echo $page; ?>,
             template: {

@@ -2,6 +2,20 @@
 
 //$category = get_the_category($post->ID);
 $category = get_the_terms( $post->ID, 'explora' );
+//var_dump($category);
+
+$name = '';
+
+foreach ($category as $key => $category_) {
+
+	if ( $category_->parent != 0 ) {
+		$name = $category_->name;
+	}
+
+}
+if ( empty($name)) {
+	$category[0]->name;
+}
 
 // $queried_object = get_queried_object();
 
@@ -28,14 +42,18 @@ $category = get_the_terms( $post->ID, 'explora' );
 				<img decoding="async" class="wp-image-86140" src="<?php echo get_the_post_thumbnail_url( $post->ID); ?>"  alt="">
 			</a>
 
-			<div class="slider-cat"><?php echo $category[0]->name; ?></div>
+			<div class="slider-cat"><?php echo $name; ?></div>
 			<div class="noticia-title">
 				<a tabindex="-1" href="<?php echo get_the_permalink( $post->ID); ?>">
 					<?php echo $post->post_title; ?>
 				</a>
 			</div>
 			<div class="noticia-descript"><?php echo get_the_date( 'd M / Y' ); ?></div>
-
+			<div class="readmore">
+				<!-- <span class="btn-container"> -->
+					<a href="<?php echo get_the_permalink( $post->ID); ?>" class="explorar-link exitNotifierLink" rel="nofollow undefined">LER MAIS</a>
+				<!-- </span>				 -->
+			</div>
 	</div>
 
 

@@ -15,13 +15,13 @@ $video_thumbnail = get_the_post_thumbnail_url( $post->ID);
 parse_str( parse_url( $youtube, PHP_URL_QUERY ), $my_array_of_vars );
 
 if ( !$video_thumbnail && isset($my_array_of_vars['v']) ) {
-	$video_thumbnail =  'https://img.youtube.com/vi/'.$my_array_of_vars['v'].'/hqdefault.jpg';
+	$video_thumbnail =  'https://img.youtube.com/vi/'.$my_array_of_vars['v'].'/mqdefault.jpg';
 } 
 
 ?>
 
 
-	<div class="noticas-content divulgar-content col-lg-3">
+	<div class="noticas-content divulgar-content col-lg-4">
 
 			<a tabindex="-1" href="<?php echo $youtube; ?>" class="popup-youtube divulgar-image noticas-image noExitNotifier" target="_self" data-lb-index="0">
 				<div class="t-entry-visual-overlay">

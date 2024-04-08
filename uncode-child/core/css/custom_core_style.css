@@ -3,3 +3,17 @@
 .single-explorar .author-info {
 	display: none;
 }
+
+.accept-wrap .wpcf7-list-item {
+	margin: 0;
+}
+.accept-wrap .wpcf7-acceptance label {
+	color: white;
+	display: inline-block !important;
+}
+.accept-wrap .wpcf7-acceptance label  .wpcf7-list-item-label {
+
+}
+.accept-wrap .wpcf7-acceptance label  .wpcf7-list-item-label a {
+	color: white;
+}
