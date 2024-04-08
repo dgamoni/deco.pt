@@ -17,6 +17,10 @@
     display: inline-block;
 }
 
+.single-curso #page-header .heading-text {
+    display: none;
+}
+
 /*related*/
 
 .curso_wrap {
@@ -144,4 +148,5 @@ a.curso_link:hover {
 	.curso_item .t-entry-title {
 	    font-size: 17px;
 	}		
-}	
+}
+

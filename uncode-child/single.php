@@ -352,8 +352,8 @@ while (have_posts()):
 	if ( $post_type == 'curso' ) {
 		ob_start();
 			$title_content .= '<hr class="separator-break separator-accent curso-sep">';
-			$title_content .= '<div class="curso_before_content">DESCRIÇÃO</div>';
-
+			//$title_content .= '<div class="curso_before_content">DESCRIÇÃO</div>';
+			$title_content .= do_shortcode('[curso_info]');
 		ob_end_clean();
 	}
 
