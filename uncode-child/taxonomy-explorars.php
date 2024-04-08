@@ -387,10 +387,9 @@ if ( have_posts() || uncode_is_filtering() ):
           			<a href="'.home_url().'" class="mainlogo"><img src="https://deco.pt/wp-content/uploads/2023/06/logo-sobreviver-a-crise.svg"></a>'
           			. $slider_content .
           		'</div>'	 
-          	. $divulgar_content
+
           	. $noticias_content
-          	. $green_content
-          	. $explorar_content
+
           	//. $content_output 
           	. '</div>' 
           	//. $navigation_content 

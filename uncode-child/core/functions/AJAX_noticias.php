@@ -753,7 +753,7 @@ function get_explorarfilter_new() {
 		$itemsPerPage = 12;
 
 		$args = array(
-		  'post_type'      => 'post',  // explorar
+		  'post_type'      => 'explorar',  // explorar
 		  'post_status' => 'publish',
 		  'order'       => 'DESC',
 		  'orderby'     => 'date',
@@ -791,7 +791,7 @@ function get_explorarfilter_new() {
 
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 
-					get_template_part( 'template-parts/loop', 'explorars' );
+					get_template_part( 'template-parts/loop', 'explorar' );
 
 				endwhile;
 

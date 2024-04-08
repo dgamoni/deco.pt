@@ -25,7 +25,7 @@ $page = 1;
 $itemsPerPage = 12;
 
 $args = array(
-  'post_type'      => 'post', // explorar 
+  'post_type'      => 'explorar', // explorar 
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',
@@ -173,7 +173,7 @@ if ( $total < $itemsPerPage ) {
 
 									while ( $the_query->have_posts() ) : $the_query->the_post();
 
-										get_template_part('template-parts/loop', 'explorars');
+										get_template_part('template-parts/loop', 'explorar');
 
 									endwhile;
 								else :
@@ -189,7 +189,7 @@ if ( $total < $itemsPerPage ) {
 								<div class="resource-nav-pagination-filter <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter"></div>
 							</article> 
 							<div class="pagination_text">
-								<a href="<?php echo home_url( '/explorars/' ); ?>" target="_blank">ver todos os destaques</a>
+								<a href="<?php echo home_url( '/explorars/' ); ?>">ver todos os destaques</a>
 							</div>		
 
 						</div>

@@ -69,7 +69,7 @@ $terms = get_terms( [
 
 																	?>
 																		<div class="post-wraper <?php echo $child_term->term_id; ?>">
-																			<a href="<?php echo home_url( 'explorars/'. $term->slug. '/'. $child_term->slug); ?>" target="_blank">
+																			<a href="<?php echo home_url( 'explorars/'. $term->slug. '/'. $child_term->slug); ?>">
 																				<?php echo $child_term->name; ?>
 																			</a>
 																		</div>

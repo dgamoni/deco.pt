@@ -151,6 +151,12 @@
 .noticia-title a {
     color: black;
 }
+
+.explorar-content .noticia-title a {
+    color: #228848;
+    text-transform: uppercase;
+}
+
 .noticia-date {
     padding-top: 5px;
     color: #157b3b;
