@@ -276,7 +276,9 @@
 
 /*page-template-template-noticia*/
 
-.page-template-template-noticia .tui-pagination .tui-is-selected, .tui-pagination strong {
+.page-template-template-noticia .tui-pagination .tui-is-selected, .tui-pagination strong,
+.page-template-template-divulgar .tui-pagination .tui-is-selected, .tui-pagination strong,
+.page-template-template-explorar .tui-pagination .tui-is-selected, .tui-pagination strong  {
     /* color: #333333; */
     background: #333333;
     border-color: #333333;
@@ -290,7 +292,13 @@
 }
 .page-template-template-noticia .tui-pagination .tui-page-btn,
 .page-template-template-noticia .tui-pagination .tui-next-is-ellip,
-.page-template-template-noticia .tui-pagination .tui-next {
+.page-template-template-noticia .tui-pagination .tui-next,
+.page-template-template-divulgar .tui-pagination .tui-page-btn,
+.page-template-template-divulgar .tui-pagination .tui-next-is-ellip,
+.page-template-template-divulgar .tui-pagination .tui-next,
+.page-template-template-explorar .tui-pagination .tui-page-btn,
+.page-template-template-explorar .tui-pagination .tui-next-is-ellip,
+.page-template-template-explorar .tui-pagination .tui-next {
     border: none;
     border-radius: 50%;
 }

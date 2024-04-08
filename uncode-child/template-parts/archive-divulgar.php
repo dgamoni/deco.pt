@@ -21,7 +21,7 @@ $page = 1;
 $itemsPerPage = 12;
 
 $args = array(
-  'post_type'      => 'post',  // noticia
+  'post_type'      => 'post',  // divulgar
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',
@@ -60,7 +60,7 @@ if ( $total < $itemsPerPage ) {
 												
 												<li class="filter-show-all">
 													<span>
-														<a href="<?php echo home_url( '/noticia/'); ?>" data-id="" class="<?php echo $showall; ?> isotope-nav-link grid-nav-link">Mostrar todas</a>
+														<a href="<?php echo home_url( '/divulgar/'); ?>" data-id="" class="<?php echo $showall; ?> isotope-nav-link grid-nav-link">Mostrar todas</a>
 													</span>
 												</li>
 																				
@@ -76,7 +76,7 @@ if ( $total < $itemsPerPage ) {
 
 													<li class="filter-cat-<?php echo $term->term_id; ?> filter-cat">
 														<span>
-															<a href="<?php echo home_url( '/noticia?category='.$term->term_id); ?>" data-id="<?php echo $term->term_id; ?>" class="<?php echo $active; ?> noticia-filter-link isotope-nav-link grid-nav-link"><?php echo $term->name; ?></a>
+															<a href="<?php echo home_url( '/divulgar?category='.$term->term_id); ?>" data-id="<?php echo $term->term_id; ?>" class="<?php echo $active; ?> divulgar-filter-link isotope-nav-link grid-nav-link"><?php echo $term->name; ?></a>
 														</span>
 													</li>
 																																
@@ -101,7 +101,7 @@ if ( $total < $itemsPerPage ) {
 
 																					while ( $the_query->have_posts() ) : $the_query->the_post();
 
-																						get_template_part('template-parts/loop', 'noticias');
+																						get_template_part('template-parts/loop', 'divulgar');
 
 																					endwhile;
 
@@ -172,7 +172,7 @@ if ( $total < $itemsPerPage ) {
 													                        type    : "POST",
 													                        url     : js_url.ajaxurl,
 													                        dataType: "json",
-													                        data    : "action=get_noticia-filter&page="+page+"",
+													                        data    : "action=get_divulgar-filter&page="+page+"",
 													                        success : function (a) {
 													                            console.log(a);
 

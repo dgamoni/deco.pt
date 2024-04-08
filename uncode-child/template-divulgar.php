@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Archive noticia
+ * Template Name: Archive divulgar
  */
 
 /**
@@ -381,7 +381,7 @@ if ( have_posts() || uncode_is_filtering() ):
 	// ob_end_clean();
 
 	ob_start();
-		get_template_part('template-parts/archive', 'noticia');
+		get_template_part('template-parts/archive', 'divulgar');
 	$noticias_content = ob_get_contents();
 	ob_end_clean();
 

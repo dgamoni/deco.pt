@@ -27,7 +27,7 @@ function custom_child_scripts() {
 	wp_localize_script( 'custom_script', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 
 	
-	if ( is_page_template('template-home.php') || is_page_template('template-noticia.php') ) {
+	if ( is_page_template('template-home.php') || is_page_template('template-noticia.php') || is_page_template('template-divulgar.php') || is_page_template('template-explorar.php')) {
 
 		// slider
 		wp_enqueue_style(
