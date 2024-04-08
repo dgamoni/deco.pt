@@ -92,7 +92,7 @@
 																			</div>
 																		</div>
 																	</div>
-																	<img decoding="async" class="wp-image-102768" src="<?php echo get_the_post_thumbnail_url( $post_id ); ?>"  alt="">
+																	<img decoding="async" class="curso-related-img wp-image-102768" src="<?php echo get_the_post_thumbnail_url( $post_id ); ?>"  alt="">
 																<!-- </a> -->
 															</div>
 														<?php

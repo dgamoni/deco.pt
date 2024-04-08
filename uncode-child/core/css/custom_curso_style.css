@@ -109,6 +109,12 @@ a.curso_link:hover {
     background-color: #6ec280;
     border-color: #6ec280;
 }
+.curso-related-img {
+	min-height: 230px;
+	object-fit: cover;
+}
+
+
 @media (max-width: 1098px) {
 	.curso_item .t-entry-title {
 	    font-size: 22px;
