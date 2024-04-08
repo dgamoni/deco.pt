@@ -2,8 +2,9 @@
 
 
 $terms = get_terms( [
-	'taxonomy' => 'category', // explorar
-	'hide_empty' => true,
+	'taxonomy' => 'explorars', // explorar
+	'hide_empty' => false,
+	'parent'	=> 0,
 ] );
 //var_dump( count($terms) /2);
 ?>
@@ -58,35 +59,23 @@ $terms = get_terms( [
 														<div class="panel-body wpb_accordion_content ui-accordion-content half-internal-gutter single-block-padding">
 															<?php 
 
-																$args = array(
-																  'post_type'      => 'post', // explorar 
-																  'post_status' => 'publish',
-																  'order'       => 'DESC',
-																  'orderby'     => 'date',
-																  'posts_per_page' => 6,
-																  'tax_query' => array(
-																        [
-																            'taxonomy' => 'category', // explorar 
-																            'terms' => $term->term_id,
-																        ],
-																   ),
-																);
+																$child_terms = get_terms( [
+																	'taxonomy' => 'explorars', // explorar
+																	'hide_empty' => false,
+																	'child_of'	=> $term->term_id,
+																] );
 
-																$the_query = new WP_Query( $args );
+																foreach ( $child_terms as $key => $child_term ) :
 
-																	while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-																		<div class="post-wraper <?php echo $post->ID; ?>">
-																			<a href="<?php echo get_the_permalink( $post->ID); ?>">
-																				<?php echo $post->post_title; ?>
+																	?>
+																		<div class="post-wraper <?php echo $child_term->term_id; ?>">
+																			<a href="<?php echo home_url( 'explorars/'. $term->slug. '/'. $child_term->slug); ?>" target="_blank">
+																				<?php echo $child_term->name; ?>
 																			</a>
 																		</div>
 
 																	<?php
-																	endwhile;
-
-																wp_reset_postdata();
-																wp_reset_query();
+																endforeach;
 															?>
 														</div>
 													</div>
@@ -121,35 +110,23 @@ $terms = get_terms( [
 														<div class="panel-body wpb_accordion_content ui-accordion-content half-internal-gutter single-block-padding">
 															<?php 
 
-																$args = array(
-																  'post_type'      => 'post', // explorar 
-																  'post_status' => 'publish',
-																  'order'       => 'DESC',
-																  'orderby'     => 'date',
-																  'posts_per_page' => 6,
-																  'tax_query' => array(
-																        [
-																            'taxonomy' => 'category', // explorar 
-																            'terms' => $term->term_id,
-																        ],
-																   ),
-																);
+																$child_terms = get_terms( [
+																	'taxonomy' => 'explorars', // explorar
+																	'hide_empty' => false,
+																	'child_of'	=> $term->term_id,
+																] );
 
-																$the_query = new WP_Query( $args );
+																foreach ( $child_terms as $key => $child_term ) :
 
-																	while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-																		<div class="post-wraper <?php echo $post->ID; ?>">
-																			<a href="<?php echo get_the_permalink( $post->ID); ?>">
-																				<?php echo $post->post_title; ?>
+																	?>
+																		<div class="post-wraper <?php echo $child_term->term_id; ?>">
+																			<a href="<?php echo home_url( 'explorars/'. $term->slug. '/'. $child_term->slug); ?>" target="_blank">
+																				<?php echo $child_term->name; ?>
 																			</a>
 																		</div>
 
 																	<?php
-																	endwhile;
-
-																wp_reset_postdata();
-																wp_reset_query();
+																endforeach;
 															?>
 														</div>
 													</div>

@@ -2,7 +2,7 @@
 
 
 $args_t = [
-	'taxonomy'      => [ 'category' ], // explorar
+	'taxonomy'      => [ 'category' ], // explorars
 	'orderby'       => 'id',
 	'order'         => 'ASC',
 	'hide_empty'    => false,

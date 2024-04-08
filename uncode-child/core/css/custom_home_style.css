@@ -116,6 +116,9 @@
     padding-bottom: 20px;
 }
 
+.row.explorars-wraper {
+    flex-direction: column;
+}
 
 .noticas-content.col-lg-3 {
   padding: 0;
@@ -178,7 +181,11 @@
 .page-template-template-home .tui-pagination .tui-page-btn.locate-anything-page-nav,
 .page-template-template-home .tui-pagination .tui-page-btn.custom-class-first,
 .page-template-template-home .tui-pagination .tui-page-btn.custom-class-last,
-.page-template-template-home .tui-pagination .tui-page-btn.tui-last-child {
+.page-template-template-home .tui-pagination .tui-page-btn.tui-last-child,
+.archive.tax-explorars .tui-pagination .tui-page-btn.locate-anything-page-nav,
+.archive.tax-explorars .tui-pagination .tui-page-btn.custom-class-first,
+.archive.tax-explorars .tui-pagination .tui-page-btn.custom-class-last,
+.archive.tax-explorars .tui-pagination .tui-page-btn.tui-last-child  {
   display: none;
 }
 
@@ -192,16 +199,24 @@
 .page-template-template-home .tui-pagination .tui-next, 
 .page-template-template-home .tui-pagination .tui-next-is-ellip, 
 .page-template-template-home .tui-pagination .tui-prev, 
-.page-template-template-home .tui-pagination .tui-prev-is-ellip {
+.page-template-template-home .tui-pagination .tui-prev-is-ellip,
+.archive.tax-explorars .tui-pagination .tui-next, 
+.archive.tax-explorars .tui-pagination .tui-next-is-ellip, 
+.archive.tax-explorars .tui-pagination .tui-prev, 
+.archive.tax-explorars .tui-pagination .tui-prev-is-ellip  {
     border: 2px solid #000;
 }
 
-.page-template-template-home  .tui-pagination .tui-page-btn:hover {
+.page-template-template-home  .tui-pagination .tui-page-btn:hover,
+.archive.tax-explorars  .tui-pagination .tui-page-btn:hover {
     background-color: white;
 }
 .page-template-template-home .tui-pagination .tui-first+.tui-prev, 
 .page-template-template-home .tui-pagination .tui-next+.tui-last, 
-.page-template-template-home .tui-pagination .tui-next-is-ellip {
+.page-template-template-home .tui-pagination .tui-next-is-ellip,
+.archive.tax-explorars  .tui-pagination .tui-first+.tui-prev, 
+.archive.tax-explorars .tui-pagination .tui-next+.tui-last, 
+.archive.tax-explorars  .tui-pagination .tui-next-is-ellip {
     border-left: 2px solid;
 }
 .chrome .pagination_wrap.col-lg-12 {
@@ -209,7 +224,8 @@
     padding: 0;
 }
 
-.page-template-template-home .tui-pagination .tui-is-disabled .tui-ico-prev {
+.page-template-template-home .tui-pagination .tui-is-disabled .tui-ico-prev,
+.archive.tax-explorars  .tui-pagination .tui-is-disabled .tui-ico-prev {
     background-position: -26px 0;
 }
 
@@ -521,6 +537,45 @@ font-family: "uncodeicon";
 .explorar-block .panel-group .panel-heading.termcolor-18 {
     background-color: rgb(12 114 60 / 66%);;
 }
+
+
+
+
+
+/*taxonomy */
+
+.explorars-tax-head span {
+    text-transform: uppercase;
+}
+.explorars-tax-sub-cat-list {
+    display: flex;
+/*    margin-top: 40px;
+    margin-bottom: 40px;*/
+}
+.explorar-filter-link-new {
+    color: white;
+}
+.explorars-tax-sub-cat-list .slider-cat {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+.explorars-tax-sub-cat-list .slider-cat:before {
+    content: '>';
+}
+
+.explorars-result {
+    position: relative;
+}
+
+.explorars-result .noticas-image {
+    min-height: 265px;
+}
+
+
+
+
 
 
 
