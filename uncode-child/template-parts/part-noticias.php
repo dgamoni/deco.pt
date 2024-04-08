@@ -2,10 +2,10 @@
 
 
 $page = 1;
-$itemsPerPage = 8;
+$itemsPerPage = 12;
 
 $args = array(
-  'post_type'      => 'post', // explorar // noticia
+  'post_type'      => 'post',  // noticia
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',
@@ -32,25 +32,7 @@ if ( $total < $itemsPerPage ) {
 			<div class="wpb_row row-inner">
 				<div class="wpb_column pos-top pos-center align_left column_parent col-lg-3/5 half-internal-gutter">
 					
-					<div class="uncol style-light">
-						<div class="uncoltable">
-							<div class="uncell no-block-padding">
-								<div class="uncont">
-									<div class="vc_custom_heading_wrap ">
-										<div class="heading-text el-text">
-											<h2 class="h2 fontspace-210350 text-color-jevc-color">
-												<span>NOTÍCIAS</span>
-											</h2>
-										</div>
-										<div class="clear"></div>
-									</div>
-									<div class="divider-wrapper ">
-									    <hr class="border-color-jevc-color separator-no-padding">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+
 
 					<div class="row noticas-wraper">
 
@@ -66,16 +48,14 @@ if ( $total < $itemsPerPage ) {
 
 							?>
 
-<!-- 							<div id="services-loader" class="spinner-border" role="status">
+							<div id="services-loader" class="spinner-border" role="status">
 								<span class="sr-only">Loading...</span>
-							</div> -->
+							</div>
 		
 							<article class="col-xs-12 col-lg-12 pagination_wrap">
 								<div class="resource-nav-pagination-filter <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter"></div>
 							</article> 
-							<div class="pagination_text">
-								<a href="<?php echo get_post_type_archive_link('noticia'); ?>" target="_blank">ver todos os destaques</a>
-							</div>		
+		
 
 						</div>
 
@@ -95,7 +75,7 @@ if ( $total < $itemsPerPage ) {
          window['resource_nav_pagination-filter'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter'), {
               totalItems: <?php echo $total; ?>,
               itemsPerPage: <?php echo $itemsPerPage; ?>,
-              visiblePages: 8,
+              visiblePages: 12,
               centerAlign: true,
               page: <?php echo $page; ?>,
             template: {

@@ -147,12 +147,13 @@
   display: flex;
     flex-wrap: wrap;
     margin-right: -40px;
+    text-align: left;
 }
 
-.tui-pagination .tui-page-btn.locate-anything-page-nav,
-.tui-pagination .tui-page-btn.custom-class-first,
-.tui-pagination .tui-page-btn.custom-class-last,
-.tui-pagination .tui-page-btn.tui-last-child {
+.page-template-template-home .tui-pagination .tui-page-btn.locate-anything-page-nav,
+.page-template-template-home .tui-pagination .tui-page-btn.custom-class-first,
+.page-template-template-home .tui-pagination .tui-page-btn.custom-class-last,
+.page-template-template-home .tui-pagination .tui-page-btn.tui-last-child {
   display: none;
 }
 
@@ -163,14 +164,19 @@
     font-size: 15px;
 }
 
-.tui-pagination .tui-next, .tui-pagination .tui-next-is-ellip, .tui-pagination .tui-prev, .tui-pagination .tui-prev-is-ellip {
+.page-template-template-home .tui-pagination .tui-next, 
+.page-template-template-home .tui-pagination .tui-next-is-ellip, 
+.page-template-template-home .tui-pagination .tui-prev, 
+.page-template-template-home .tui-pagination .tui-prev-is-ellip {
     border: 2px solid #000;
 }
 
-.tui-pagination .tui-page-btn:hover {
+.page-template-template-home  .tui-pagination .tui-page-btn:hover {
     background-color: white;
 }
-.tui-pagination .tui-first+.tui-prev, .tui-pagination .tui-next+.tui-last, .tui-pagination .tui-next-is-ellip {
+.page-template-template-home .tui-pagination .tui-first+.tui-prev, 
+.page-template-template-home .tui-pagination .tui-next+.tui-last, 
+.page-template-template-home .tui-pagination .tui-next-is-ellip {
     border-left: 2px solid;
 }
 .chrome .pagination_wrap.col-lg-12 {
@@ -178,7 +184,7 @@
     padding: 0;
 }
 
-.tui-pagination .tui-is-disabled .tui-ico-prev {
+.page-template-template-home .tui-pagination .tui-is-disabled .tui-ico-prev {
     background-position: -26px 0;
 }
 
@@ -191,6 +197,7 @@
   display: flex;
     flex-wrap: wrap;
     margin-right: -40px;
+    position: relative;
 }
 
 .divulgar-content a.divulgar-image:hover .t-entry-visual-overlay {
@@ -236,37 +243,89 @@
 }
 
 
+/*video popup*/
 
-   /**
-       * Simple fade transition,
-       */
-      .mfp-fade.mfp-bg {
-        opacity: 0;
-        -webkit-transition: all 0.15s ease-out; 
-        -moz-transition: all 0.15s ease-out; 
-        transition: all 0.15s ease-out;
-      }
-      .mfp-fade.mfp-bg.mfp-ready {
-        opacity: 0.8;
-      }
-      .mfp-fade.mfp-bg.mfp-removing {
-        opacity: 0;
-      }
+/**
+* Simple fade transition,
+*/
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
 
-      .mfp-fade.mfp-wrap .mfp-content {
-        opacity: 0;
-        -webkit-transition: all 0.15s ease-out; 
-        -moz-transition: all 0.15s ease-out; 
-        transition: all 0.15s ease-out;
-      }
-      .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-        opacity: 1;
-      }
-      .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-        opacity: 0;
-      }
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
 
+/*page-template-template-noticia*/
 
+.page-template-template-noticia .tui-pagination .tui-is-selected, .tui-pagination strong {
+    /* color: #333333; */
+    background: #333333;
+    border-color: #333333;
+    cursor: default;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 50%;
+}
+.page-template-template-noticia .tui-pagination .tui-first-child.tui-is-selected {
+    border-left: none;
+}
+.page-template-template-noticia .tui-pagination .tui-page-btn,
+.page-template-template-noticia .tui-pagination .tui-next-is-ellip,
+.page-template-template-noticia .tui-pagination .tui-next {
+    border: none;
+    border-radius: 50%;
+}
 
+.grid-nav-link:hover {
+  cursor: pointer;
+}
 
+.spinner-border {
+    display: none;
+    transition: opacity 0.5s ease;
+    background-image: url('https://deco.pt/wp-content/themes/uncode/library/img/oval-anim-light.svg');
+    width: 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 40px;
+    left: 50%;
+    top: 100px;
+}
+.sr-only {
+  display: none;
+}
 
+.pagination_hide {
+  display: none;
+}
+
+.noticas-content  {
+    text-align: left;
+}
+.nofound {
+  min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        margin: 0 auto;
+    text-align: center;
+}
