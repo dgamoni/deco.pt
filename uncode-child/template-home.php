@@ -371,6 +371,11 @@ if ( have_posts() || uncode_is_filtering() ):
 	ob_end_clean();
 
 	ob_start();
+		get_template_part('template-parts/home', 'divulgar');
+	$divulgar_content = ob_get_contents();
+	ob_end_clean();
+
+	ob_start();
 		get_template_part('template-parts/home', 'noticias');
 	$noticias_content = ob_get_contents();
 	ob_end_clean();
@@ -380,6 +385,7 @@ if ( have_posts() || uncode_is_filtering() ):
           <div class="post-wrapper">
           	<div class="post-body">'
           	. $slider_content 
+          	. $divulgar_content
           	. $noticias_content
           	. $content_output 
           	. '</div>' .

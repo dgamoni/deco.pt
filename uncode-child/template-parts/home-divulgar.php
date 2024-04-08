@@ -2,10 +2,10 @@
 
 
 $page = 1;
-$itemsPerPage = 8;
+$itemsPerPage = 4;
 
 $args = array(
-  'post_type'      => 'post', // explorar // noticia
+  'post_type'      => 'post', // explorar // noticia // divulgar
   'post_status' => 'publish',
   'order'       => 'DESC',
   'orderby'     => 'date',
@@ -39,7 +39,7 @@ if ( $total < $itemsPerPage ) {
 									<div class="vc_custom_heading_wrap ">
 										<div class="heading-text el-text">
 											<h2 class="h2 fontspace-210350 text-color-jevc-color">
-												<span>NOTÍCIAS</span>
+												<span>DIVULGAR</span>
 											</h2>
 										</div>
 										<div class="clear"></div>
@@ -54,13 +54,13 @@ if ( $total < $itemsPerPage ) {
 
 					<div class="row noticas-wraper">
 
-						<div id="noticas_result" class="ajax_search_result">
+						<div id="divulgar_result" class="ajax_search_result">
 
 							<?php 
 
 								while ( $the_query->have_posts() ) : $the_query->the_post();
 
-									get_template_part('template-parts/loop', 'noticias');
+									get_template_part('template-parts/loop', 'divulgar');
 
 								endwhile;
 
@@ -71,10 +71,10 @@ if ( $total < $itemsPerPage ) {
 							</div> -->
 		
 							<article class="col-xs-12 col-lg-12 pagination_wrap">
-								<div class="resource-nav-pagination-filter <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter"></div>
+								<div class="resource-nav-pagination-filter2 <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter2"></div>
 							</article> 
 							<div class="pagination_text">
-								<a href="<?php echo get_post_type_archive_link('noticia'); ?>" target="_blank">ver todos os destaques</a>
+								<a href="<?php echo get_post_type_archive_link('divulgar'); ?>" target="_blank">ver todos os destaques</a>
 							</div>		
 
 						</div>
@@ -92,10 +92,10 @@ if ( $total < $itemsPerPage ) {
 
 		//var page = e.page;
 
-         window['resource_nav_pagination-filter'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter'), {
+         window['resource_nav_pagination-filter2'] = new tui.Pagination(document.getElementById('resource-nav-pagination-filter2'), {
               totalItems: <?php echo $total; ?>,
               itemsPerPage: <?php echo $itemsPerPage; ?>,
-              visiblePages: 8,
+              visiblePages: 4,
               centerAlign: true,
               page: <?php echo $page; ?>,
             template: {
@@ -116,7 +116,7 @@ if ( $total < $itemsPerPage ) {
             }              
           });
 
-        window['resource_nav_pagination-filter'].on('beforeMove', function(e) {
+        window['resource_nav_pagination-filter2'].on('beforeMove', function(e) {
             var page = e.page;
             
             if ( page ) {
@@ -124,7 +124,7 @@ if ( $total < $itemsPerPage ) {
 
 
 
-                $('#noticas_result').css({
+                $('#divulgar_result').css({
                     'opacity': 0.3
                 });
                 //$('#services-loader').show();
@@ -133,17 +133,17 @@ if ( $total < $itemsPerPage ) {
                         type    : "POST",
                         url     : js_url.ajaxurl,
                         dataType: "json",
-                        data    : "action=get_noticias&page="+page+"",
+                        data    : "action=get_divulgar&page="+page+"",
                         success : function (a) {
                             console.log(a);
 
-                            $('#noticas_result').html(a.content).css({
+                            $('#divulgar_result').html(a.content).css({
                                 'opacity': '1'
                             });
                             //$('#services-loader').hide();
 
 
-                            var destination = $('#noticas_result').offset().top - 150;
+                            var destination = $('#divulgar_result').offset().top - 150;
                             $('body,html').animate({scrollTop: destination}, 400);
 
               
