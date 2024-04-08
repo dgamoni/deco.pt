@@ -1,0 +1,541 @@
+/*
+
+Theme Name: Uncode Child
+
+Description: Child theme for Uncode theme
+
+Author: Undsgn™
+
+Author URI: http://www.undsgn.com
+
+Template: uncode
+
+Version: 1.0.0
+
+Text Domain: uncode
+
+*/
+
+/* add underline and color a links */
+.post-body strong { color: #777777!important; }
+
+
+
+/*dev*/
+
+
+
+.mec-calendar.mec-calendar-timetable .mec-calendar-d-table dl dt.mec-timetable-day-active {
+
+    background: #228848 !important;
+
+}
+
+.mec-calendar.mec-calendar-timetable .mec-calendar-d-table dl dt.mec-timetable-day-active::after {
+
+    border-color: #228848 transparent transparent transparent !important;
+
+}
+
+.bfd-column.bfd-mime-col {
+	text-align: center;
+}
+.bfd-icon-single {
+    float: none;
+}
+
+body .font-762333,
+body .font-156269 {
+    font-family: Montserrat !important;
+}
+
+/*.icon-231174 {
+	    width: 50px;
+}*/
+
+.consigo_button {
+	margin-left: 90px;
+}
+.pagename-deco-consigo .main-container .row-container .row-parent .double-internal-gutter .uncont > * {
+    margin-top: 34px;
+}
+
+.pagename-deco-consigo .onepage-pagination {
+	display: none;
+}
+
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.active > a,
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li a.active,
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-parent > a,
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-ancestor > a,
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {
+  /*color: rgba(34,136,72,.5) !important;*/
+  color: rgba(255,255,255,.5) !important;
+}
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li > a {
+  /*color: #228848 !important;*/
+  color: rgba(255,255,255,1) !important;
+}
+
+/*body:not(.menu-force-opacity) .style-dark-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.active > a,
+body:not(.menu-force-opacity) .style-dark-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li a.active,
+body:not(.menu-force-opacity) .style-dark-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-parent > a,
+body:not(.menu-force-opacity) .style-dark-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-ancestor > a,
+body:not(.menu-force-opacity) .style-dark-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {
+  color: rgba(255,255,255,.5) !important;
+}*/
+
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .menu-horizontal-inner > .nav > .menu-smart > li > a {
+  /*color: #228848 !important;*/
+}
+body:not(.menu-force-opacity) .style-light-override:not(.is_stuck):not(.is_mobile_open).menu-transparent .mobile-additional-icon {
+  /*color: #228848 !important;*/
+}
+
+body.pagename-onde-estamos #asl-storelocator.container.storelocator-main.asl-p-cont.asl-template-0 {
+    max-width: 100% !important;
+}
+
+/*timeline*/
+.pagename-historia .cool-timeline.white-timeline .timeline-post.even .timeline-content .content-title {
+    background: #228848;
+}
+.pagename-historia .cool-timeline.white-timeline .timeline-post.even .timeline-content .content-title::before,
+.pagename-historia .main-design-3 .cool-timeline.light-timeline .timeline-post.even .timeline-content::before, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline .timeline-post.even .timeline-content::before, 
+.pagename-historia .main-design-3 .cool-timeline.white-timeline .timeline-post.even .timeline-content::before {
+    border-right-color: #228848;
+}
+.pagename-historia .cool-timeline.white-timeline .timeline-post.even .icon-color-white, 
+.pagename-historia .cool-timeline.one-sided.white-timeline .timeline-post.even .icon-color-white, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline .timeline-post.even .timeline-content, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline .timeline-post.even .timeline-icon {
+    background: #228848;
+}
+.pagename-historia .section-bullets-right li:nth-child(2n+1).white-timeline.active::after, 
+.pagename-historia .section-bullets-right li:nth-child(2n+1).white-timeline.active {
+    border-left-color: #228848;
+}
+.pagename-historia .section-bullets-right li:nth-child(2n+1).white-timeline.active::after, 
+.pagename-historia .section-bullets-right li:nth-child(2n+1).white-timeline.active {
+    border-left-color: #228848;
+}
+.pagename-historia .cool-timeline.white-timeline .timeline-post.even .timeline-meta .meta-details {
+    color: #228848;
+}
+
+/* timeline odd*/
+.pagename-historia .cool-timeline.white-timeline .timeline-post.odd .timeline-content .content-title,
+.pagename-historia .cool-timeline.white-timeline.compact .timeline-post.ctl-right .icon-dot-full, 
+.pagename-historia .cool-timeline.white-timeline.compact .timeline-post.ctl-right .timeline-content .content-title, 
+.pagename-historia .cool-timeline.white-timeline.compact .timeline-post.icons_yes.ctl-right .timeline-icon, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline .timeline-post.odd .timeline-content, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline .timeline-post.odd .timeline-icon, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline.compact .timeline-post.timeline-mansory.ctl-right .timeline-content,
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline.compact .timeline-post.timeline-mansory.ctl-right .timeline-icon {
+    background: #228848;
+}
+.pagename-historia .cool-timeline.white-timeline .timeline-post.odd .timeline-content .content-title::before, 
+.pagename-historia .main-design-3 .cool-timeline.light-timeline .timeline-post.odd .timeline-content::before, 
+.pagename-historia .main-design-3 .cool-timeline.dark-timeline .timeline-post.odd .timeline-content::before, 
+.pagename-historia .main-design-3 .cool-timeline.white-timeline .timeline-post.odd .timeline-content::before {
+    border-left-color: #228848;
+}
+.pagename-historia .cool-timeline.white-timeline .timeline-post .icon-color-white, 
+.pagename-historia .cool-timeline.one-sided.white-timeline .timeline-post .icon-color-white {
+    background: #228848;
+}
+.pagename-historia .cool-timeline.white-timeline .timeline-post.odd .timeline-meta .meta-details {
+    color: #228848;
+}
+.pagename-historia .section-bullets-right li:nth-child(2n).white-timeline.active::after, 
+.pagename-historia .section-bullets-right li:nth-child(2n).white-timeline.active {
+    border-left-color: #228848;
+}
+
+
+
+
+/* map template 0 */
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow {
+  background-color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .features li {
+  color: #808080;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow h2 {
+  color: #000000;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .storelocator-panel {
+  border: 1px solid #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .store-locator h4 {
+  color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .store-locator .agile-modal-backdrop-in {
+  background-color: #000000;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .store-locator button.close-directions.close[aria-label="Close"] {
+  background: rgba(0,0,0,0) none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .half-rule {
+  border-color: #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .half-rule-1 {
+  border-bottom: 1px solid #dddddd;
+}
+#asl-storelocator.storelocator-main.asl-bg-0 #asl-map-canv {
+  background: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-bg-0 #panel,
+#asl-storelocator.storelocator-main.asl-bg-0 #asl-list {
+  background: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .map-canvas-outer {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #dddddd;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel-cont button,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel-cont .btn.btn-asl {
+  background-color: #1a9c49 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel-inner .item .addr-sec .p-title,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel-inner .sl-item .addr-sec .p-title {
+  color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 div.arrow-down {
+  border-top: 25px solid #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .loading {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .asl-overlay h1.h1 {
+  color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .asl-overlay-on-item h1.h1 {
+  color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 body.search-list {
+  background: #F8F8F8;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list {
+  color: #262626;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel .s-distance,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list .s-distance {
+  color: inherit !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel .item-state a,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list .item-state a {
+  color: #262626;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel .item-state a span,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list .item-state a span {
+  background: #e1e1e1;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel .item-state a:hover span,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list .item-state a:hover span {
+  background-color: #1a9c49;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel .item-state a.collapsed span,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list .item-state a.collapsed span {
+  background-color: #1a9c49;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .store.highlighted .store-inner {
+  background-color: #ffffe0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .close {
+  background: none repeat scroll 0 0 rgba(0,0,0,0);
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoBox .categories {
+  color: #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .chosen-container-multi .chosen-choices {
+  border: 1px solid #cccccc;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .sl-item {
+  background: transparent none repeat scroll 0 0 !important;
+  border-bottom: 1px solid #cccccc !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item .thumb-a img,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .sl-item .thumb-a img {
+  border: 2px solid #d6dce2;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item .thumb-a .photo-count,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .sl-item .thumb-a .photo-count {
+  background: #6D5B50;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item .s-distance,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .sl-item .s-distance {
+  color: #000000;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item:nth-child(2n),
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .sl-item:nth-child(2n) {
+  background: #fafafa none repeat scroll 0 0 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .wrapper-container {
+  background: #ffffff;
+  border: 1px solid #d6dce2;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .listing-map.list-only {
+  background: #ffffff;
+  border: 1px solid #d6dce2;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item.highlighted,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .sl-item.highlighted {
+  background: #EEEEEE !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .adropdown-menu>.active>a,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .adropdown-menu>.active>a:hover,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .adropdown-menu>.active>a:focus {
+  background: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel-inner .item .addr-sec .p-title,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel-inner .sl-item .addr-sec .p-title {
+  color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 button.close-directions.close[aria-label="Close"] {
+  background-color: #1a9c49;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel .item,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel .sl-item {
+  border-color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel .item,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .panel .sl-item {
+  background: #ffffff !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item-state .panel .item:nth-child(2n),
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .item-state .panel .sl-item:nth-child(2n) {
+  background: #fafafa none repeat scroll 0 0 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 button.close-directions.close[aria-label="Close"] {
+  background: rgba(0,0,0,0) none repeat scroll 0 0;
+  color: #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 input#auto-complete-search:focus {
+  border-color: rgba(0,0,0,0.36);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(0,0,0,0.2);
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12.search_filter p:last-child >span,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12.search_filter .sl-search-group >span,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12.search_filter .asl-store-search >span {
+  background: #1a9c49 repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12.search_filter p:last-child >span i,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12.search_filter .sl-search-group >span i,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12.search_filter .asl-store-search >span i {
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .search_filter>p:last-child>span::before,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .search_filter>.sl-search-group>span::before {
+  border-color: transparent #1a9c49 transparent transparent;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .search_filter>p:first-child {
+  color: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .search_filter .form-control {
+  border: 1px solid #cccccc !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .categories_filter .multiselect.adropdown-toggle.style-btn.btn.btn-default {
+  color: #808080 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .slider-selection {
+  background: #1a9c49 none repeat scroll 0 0 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .slider-track {
+  background: #1a9c49 none repeat scroll 0 0 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .range_filter .rangeFilter .slider.slider-horizontal .slider-track .slider-handle.round {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter input[type="checkbox"]:checked+.radio_btn {
+  background: #1a9c49 none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .radio_btn {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .radio_btn::before {
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter p label {
+  color: #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Filter_section {
+  color: #808080;
+  background: rgba(204,204,204,0.2) none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Filter_section .range_filter .multiselect.adropdown-toggle.style-btn.btn.btn-default {
+  color: #808080 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Filter_section .range_filter .adropdown-menu li.active a {
+  color: #ffffff !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Filter_section .range_filter .adropdown-menu a {
+  color: #808080 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #panel.storelocator-panel,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-list.storelocator-panel {
+  border: 1px solid #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Num_of_store {
+  background: #1a9c49 none repeat scroll 0 0;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 ul.adropdown-menu.multiselect-container .btn.btn-default.multiselect-clear-filter {
+  border-color: #cccccc;
+  color: #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 ul.adropdown-menu.multiselect-container li .input-group-addon {
+  color: #cccccc;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow a.action {
+  background: #1a9c49 none repeat scroll 0 0 !important;
+  color: #ffffff !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .storelocator-main .action.directions {
+  background: #1a9c49 none repeat scroll 0 0;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow>h3 {
+  color: #1a9c49 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .phone>b,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .address,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .categories,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .phone>a,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .distance,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .p-time,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr .time,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoWindow .info-addr * {
+  color: #333333 !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow h3 {
+  background: #1a9c49 none repeat scroll 0 0;
+  color: #ffffff !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow a.action {
+  background: #1a9c49 none repeat scroll 0 0;
+  border-left: 1px solid #ffffff;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow .storelocator-main .action.directions {
+  background: transparent none repeat scroll 0 0;
+  color: #666666;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow .phone>b,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow .address,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow .categories,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow .phone>a,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_2.infoWindow .distance {
+  color: #333333;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoBox>img.style_2_x {
+  background: #1a9c49 none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_0.infoWindow h3 {
+  background: #1a9c49 none repeat scroll 0 0;
+  color: #ffffff !important;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_0.infoWindow a.action {
+  background: #1a9c49 none repeat scroll 0 0;
+  border-left: 1px solid #ffffff;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_0.infoWindow .storelocator-main .action.directions {
+  background: #1a9c49 none repeat scroll 0 0;
+  border-left: 1px solid #ffffff;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #style_0.infoWindow .distance {
+  color: #333333;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .infoBox>img.style_0_x {
+  background: #1a9c49 none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter .onoffswitch-label {
+  border: 2px solid #cccccc;
+  border-radius: 0px;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter .onoffswitch-inner:before,
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter .onoffswitch-inner:after {
+  background-clip: padding-box;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter .onoffswitch-inner:before {
+  background-color: #ffffff;
+  color: #333333;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter .onoffswitch-inner:after {
+  background-color: #cccccc;
+  color: #333333;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .Status_filter .onoffswitch-switch {
+  background: #1a9c49;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #geolocation-agile-modal.agile-modal.fade.in {
+  background: rgba(0,0,0,0.6) none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .col-xs-12>a.asl_Readmore_button {
+  background: rgba(0,0,0,0) none repeat scroll 0 0;
+  color: #333333;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .btn.btn-default.btn-submit {
+  background: #1a9c49 none repeat scroll 0 0;
+  border-color: #1a9c49;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .agile-modal-header .close {
+  background: rgba(0,0,0,0) none repeat scroll 0 0;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 #asl-geolocation-agile-modal .btn.btn-default {
+  background: #1a9c49 none repeat scroll 0 0;
+  color: #ffffff;
+}
+#asl-storelocator.storelocator-main.asl-p-cont.asl-bg-0 .directions-cont .agile-modal-header h4 {
+  color: #1a9c49;
+}
+
+/* map changes */
+#asl-storelocator.asl-p-cont span {
+    font-size: 13px!important;
+}
+#asl-storelocator.asl-p-cont.asl-template-0 .panel-inner .p-area {
+    font-size: 12px!important;
+}
+body #asl-storelocator.asl-p-cont.container.storelocator-main .sl-item a {
+    font-size: 12px!important;
+}
+.isotope-filters ul.menu-smart a:not(.social-menu-link) {
+    font-size: 11px;
+    line-height: 1em;
+    border-radius: 2px;
+    background-color: #77777760;
+    color: #fff;
+    padding: 5px 10px;
+}
+.menu-light .menu-smart > li a.active {
+color: white!important;
+	background-color: #228848;
+}
+}
+@media (min-width: 960px) {
+	.isotope-filters.menu-light .menu-smart a:hover {
+color: #228848!important;
+}
+}
+
+.isotope-filters ul.menu-smart > li > span {
+    display: block;
+    padding: 0px 9px 25px 9px;
+}
