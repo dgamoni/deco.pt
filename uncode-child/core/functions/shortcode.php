@@ -184,6 +184,10 @@ function curso_func( $atts ){
 	    right: 28px;
 	    top: 5px;
 	}
+	.workshops .cat-cursos {
+	    background-color: #6ec280;
+	    border-color: #6ec280;
+	}
 	@media (max-width: 1098px) {
 		.curso_item .t-entry-title {
 		    font-size: 22px;

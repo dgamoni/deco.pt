@@ -349,6 +349,14 @@ while (have_posts()):
 		$title_content .= apply_filters( 'uncode_after_body_title', '' );
 	}
 
+	if ( $post_type == 'curso' ) {
+		ob_start();
+			$title_content .= '<hr class="separator-break separator-accent curso-sep">';
+			$title_content .= '<div class="curso_before_content">DESCRIÇÃO</div>';
+
+		ob_end_clean();
+	}
+
 	/** Build content **/
 
 	$the_content = uncode_get_the_content();
@@ -583,6 +591,16 @@ while (have_posts()):
 		$content_after_body .= $content_after_body_build;
 
 	}
+
+	if ( $post_type == 'curso' ) {
+		ob_start();
+			
+			get_template_part('template-parts/related', 'curso');
+		$content_after_body = ob_get_contents();
+		ob_end_clean();
+	}
+
+
 
 	/** Build post footer **/
 

@@ -1,0 +1,141 @@
+
+.post-info {
+	display: none;
+}
+.curso_before_content {
+	color: #aca6a6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 15px;
+}
+.post-content .post-title {
+   text-transform: uppercase;
+}
+.curso-sep {
+    text-align: left;
+    display: inline-block;
+}
+
+/*related*/
+
+.curso_wrap {
+	display: flex;
+	flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;	
+    margin-top: 36px;	
+}
+.curso_item {
+	margin-bottom: 30px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 15px;
+    border: 0;
+/*	    width: calc( 100% - 270px);*/
+    position: relative;
+	display: block;
+}
+.curso_item .t-entry-visual-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: opacity 0.2s ease-in-out;
+    padding: 0 15px;
+    opacity: 0.1;
+}
+.curso_item .t-entry-visual-overlay .t-entry-visual-overlay-in {
+    width: 100%;
+    height: 100%;
+}
+
+.curso_item .style-dark-bg {
+    background-color: #141618;
+}
+.curso_item .t-overlay-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.curso_item .t-entry-title {
+	color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.style-light a.curso_link {
+    color: #ffffff;
+    background-color: #228848;
+    border-color: #228848;
+	text-transform: uppercase;
+    font-weight: 500;
+    font-size: 9px;
+    padding: 7px 7px;
+    margin-top: 7px;
+    display: inline-block;	        
+}
+a.curso_link:hover {
+	color: white;
+}
+.style-light a.curso_link:not(.btn-text-skin):hover {
+	color: white;
+}
+.curso_item .single-block-padding {
+    padding: 36px 36px 22px 36px;
+    position: absolute;
+    bottom: 0;
+    max-width: 70%;
+}
+.cat-cursos {
+	color: #ffffff;
+    background-color: #df3426; 
+    border-color: #df3426;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 9px;
+    padding: 7px 7px;
+    margin-top: 7px;
+    display: inline-block;
+    position: absolute;
+    right: 28px;
+    top: 5px;
+}
+.workshops .cat-cursos {
+    background-color: #6ec280;
+    border-color: #6ec280;
+}
+@media (max-width: 1098px) {
+	.curso_item .t-entry-title {
+	    font-size: 22px;
+	}
+	.curso_item {
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	    width: 50%;
+	}	
+}
+@media (max-width: 780px) {
+	.curso_item .t-entry-title {
+	    font-size: 37px;
+	}
+	.curso_item {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    width: 100%;
+	}		
+}
+@media (max-width: 780px) {
+	.curso_item .t-entry-title {
+	    font-size: 22px;
+	}		
+}	
+@media (max-width: 410px) {
+	.curso_item .t-entry-title {
+	    font-size: 17px;
+	}		
+}	

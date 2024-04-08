@@ -1,6 +1,17 @@
 <?php
 function custom_child_scripts() {
 
+	if ( is_singular('curso') ) {
+
+		wp_enqueue_style(
+			'custom_curso_style', 
+			CORE_URL . '/css/custom_curso_style.css',
+			array(),
+			rand()
+		);
+
+	}
+
 
 	wp_enqueue_style(
 		'custom_core_style', 
