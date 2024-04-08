@@ -1,5 +1,42 @@
 <?php
 
+function cptuisupport_override_ceventfeature( $args, $tax_slug, $orig_args ) {
+    // We only want to affect these for one taxonomy, so return early if its not that one
+    if ( 'noticias' !== $tax_slug ) {
+        return $args;
+    }
+
+    // Add in our capabilities setting
+    $args['capabilities'] = [
+        'manage_terms' => 'manage_' . $tax_slug,
+        'edit_terms'   => 'edit_' . $tax_slug,
+        'delete_terms' => 'delete' . $tax_slug,
+        'assign_terms' => 'assign_' . $tax_slug,
+    ];
+    
+    return $args;
+}
+add_action( 'cptui_pre_register_taxonomy', 'cptuisupport_override_ceventfeature', 10, 3 );
+
+function cptuisupport_override_explorars( $args, $tax_slug, $orig_args ) {
+    // We only want to affect these for one taxonomy, so return early if its not that one
+    if ( 'explorars' !== $tax_slug ) {
+        return $args;
+    }
+
+    // Add in our capabilities setting
+    $args['capabilities'] = [
+        'manage_terms' => 'manage_' . $tax_slug,
+        'edit_terms'   => 'edit_' . $tax_slug,
+        'delete_terms' => 'delete' . $tax_slug,
+        'assign_terms' => 'assign_' . $tax_slug,
+    ];
+    
+    return $args;
+}
+add_action( 'cptui_pre_register_taxonomy', 'cptuisupport_override_explorars', 10, 3 );
+
+
 function add_noticias_manager_role(){
     add_role(
         'noticias_manager',
@@ -17,10 +54,12 @@ function add_noticias_manager_role(){
             'read_private_explorar' => true,
             'upload_files' => true,
             'manage_categories' => true,
+            'manage_noticias' => true,
+            'manage_explorars' => true,
         )
     );
 }
-add_action( 'admin_init', 'add_noticias_manager_role', 4 );
+//add_action( 'admin_init', 'add_noticias_manager_role', 4 );
 
 function add_noticias_role_caps() {
     $roles = array('noticias_manager');
@@ -37,10 +76,12 @@ function add_noticias_role_caps() {
         $role->add_cap( 'publish_explorar' );
         $role->add_cap( 'read_private_explorar' );
         $role->add_cap( 'manage_categories' );
+        $role->add_cap( 'manage_noticias' );
+        $role->add_cap( 'manage_explorars' );
 
     }
 }
-add_action('admin_init', 'add_noticias_role_caps', 5 );
+//add_action('admin_init', 'add_noticias_role_caps', 5 );
 
 
 
@@ -60,7 +101,7 @@ if ( current_user_can('noticias_manager') ) {
         $hide_post_options = "<style type=\"text/css\"> .post-type-post.taxonomy-post_tag, .post-type-post.taxonomy-category { display: none; }</style>";
         print($hide_post_options);
     }
-    add_action( 'admin_head', 'hide_post_page_options'  );
+    //add_action( 'admin_head', 'hide_post_page_options'  );
 }
 
 

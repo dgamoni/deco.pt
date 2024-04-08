@@ -74,7 +74,7 @@ if ( $total < $itemsPerPage ) {
 								<div class="resource-nav-pagination-filter2 <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter2"></div>
 							</article> 
 							<div class="pagination_text">
-								<a href="<?php echo home_url( '/divulgar/' ); ?>" target="_blank">ver todos os destaques</a>
+								<a href="<?php echo home_url( '/divulgar/' ); ?>">ver todos os destaques</a>
 							</div>		
 
 						</div>

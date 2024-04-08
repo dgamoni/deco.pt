@@ -182,10 +182,12 @@
 .page-template-template-home .tui-pagination .tui-page-btn.custom-class-first,
 .page-template-template-home .tui-pagination .tui-page-btn.custom-class-last,
 .page-template-template-home .tui-pagination .tui-page-btn.tui-last-child,
+.page-template-template-home .tui-pagination .tui-page-btn.tui-prev-is-ellip,
 .archive.tax-explorars .tui-pagination .tui-page-btn.locate-anything-page-nav,
 .archive.tax-explorars .tui-pagination .tui-page-btn.custom-class-first,
 .archive.tax-explorars .tui-pagination .tui-page-btn.custom-class-last,
-.archive.tax-explorars .tui-pagination .tui-page-btn.tui-last-child  {
+.archive.tax-explorars .tui-pagination .tui-page-btn.tui-last-child,
+.archive.tax-explorars .tui-pagination .tui-page-btn.tui-prev-is-ellip  {
   display: none;
 }
 

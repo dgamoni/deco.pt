@@ -5,8 +5,8 @@ $page = 1;
 $itemsPerPage = 8;
 
 $args = array(
-  'post_type'      => 'post', // explorar // noticia
-  'post_status' => 'publish',
+  'post_type'      => 'noticia', // explorar // noticia
+  'post_status' => 'any', // publish
   'order'       => 'DESC',
   'orderby'     => 'date',
   'posts_per_page' => $itemsPerPage,
@@ -74,7 +74,7 @@ if ( $total < $itemsPerPage ) {
 								<div class="resource-nav-pagination-filter <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter"></div>
 							</article> 
 							<div class="pagination_text">
-								<a href="<?php echo home_url( '/noticia/' ); ?>" target="_blank">ver todos os destaques</a>
+								<a href="<?php echo home_url( '/noticia/' ); ?>">ver todos os destaques</a>
 							</div>		
 
 						</div>
