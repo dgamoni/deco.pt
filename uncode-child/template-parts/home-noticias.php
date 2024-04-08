@@ -45,7 +45,7 @@ if ( $total < $itemsPerPage ) {
 										<div class="clear"></div>
 									</div>
 									<div class="divider-wrapper ">
-									    <hr class="border-color-jevc-color separator-no-padding">
+									    <hr class="border-color-jevc-color_ separator-no-padding">
 									</div>
 								</div>
 							</div>
@@ -74,7 +74,7 @@ if ( $total < $itemsPerPage ) {
 								<div class="resource-nav-pagination-filter <?php echo $pagination_hide; ?> tui-pagination" id="resource-nav-pagination-filter"></div>
 							</article> 
 							<div class="pagination_text">
-								<a href="<?php echo site_url( '/noticia/' ); ?>" target="_blank">ver todos os destaques</a>
+								<a href="<?php echo home_url( '/noticia/' ); ?>" target="_blank">ver todos os destaques</a>
 							</div>		
 
 						</div>

@@ -380,6 +380,16 @@ if ( have_posts() || uncode_is_filtering() ):
 	$noticias_content = ob_get_contents();
 	ob_end_clean();
 
+	ob_start();
+		get_template_part('template-parts/home', 'green');
+	$green_content = ob_get_contents();
+	ob_end_clean();
+
+	ob_start();
+		get_template_part('template-parts/home', 'explorar');
+	$explorar_content = ob_get_contents();
+	ob_end_clean();
+
 	/** Display post html **/
 	echo '<div class="page-body' . $bg_color . '">
           <div class="post-wrapper">
@@ -387,6 +397,8 @@ if ( have_posts() || uncode_is_filtering() ):
           	. $slider_content 
           	. $divulgar_content
           	. $noticias_content
+          	. $green_content
+          	. $explorar_content
           	. $content_output 
           	. '</div>' .
           	$navigation_content . '
