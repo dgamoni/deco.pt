@@ -1,6 +1,14 @@
 
 /*slider */
-
+.slider_content {
+    position: relative;
+}
+.mainlogo {
+    position: absolute;
+    z-index: 9;
+    top: 50px;
+    left: 30px;
+}
 .swiper-container {
   width: 100%;
   height: auto;
@@ -79,7 +87,7 @@
     align-items: baseline;
     position: absolute;
     bottom: 22px;
-    left: 20px;
+    left: 30px;
 }
 
 /*content */

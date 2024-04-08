@@ -393,8 +393,11 @@ if ( have_posts() || uncode_is_filtering() ):
 	/** Display post html **/
 	echo '<div class="page-body' . $bg_color . '">
           <div class="post-wrapper">
-          	<div class="post-body">'
-          	. $slider_content 
+          	<div class="post-body">
+          		<div class="slider_content">
+          			<a href="'.home_url().'" class="mainlogo"><img src="https://deco.pt/wp-content/uploads/2023/06/logo-sobreviver-a-crise.svg"></a>'
+          			. $slider_content .
+          		'</div>'	 
           	. $divulgar_content
           	. $noticias_content
           	. $green_content
