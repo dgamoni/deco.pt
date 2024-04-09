@@ -21,34 +21,69 @@
     display: none;
 }
 
-/*related*/
+.acoes-de-formacao .cat-cursos {
+    background-color: #6BC17E;
+    border-color: #6BC17E
+}
+.workshops .cat-cursos {
+    background-color: #22ABE2;
+    border-color: #22ABE2;
+}
+
+/* related + swiper slider */
+
+.swiper-container {
+    margin-top: 36px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
 
 .curso_wrap {
-	display: flex;
+/*	display: flex;
 	flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;	
-    margin-top: 36px;	
+    margin-top: 36px;	*/
 }
 .curso_item {
-	margin-bottom: 30px;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-    padding: 0 15px;
+    /* margin-bottom: 30px; */
+    /*  flex: 0 0 33.33333%; */
+    /*  max-width: 33.33333%; */
+    /* padding: 0 15px; */
     border: 0;
-/*	    width: calc( 100% - 270px);*/
+    /*	width: calc( 100% - 270px); */
     position: relative;
 	display: block;
 }
+
+.swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+.swiper-slide-active {
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-slide-active + .swiper-slide {
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #f7f7f7;
+}
+
 .curso_item .t-entry-visual-overlay {
     position: absolute;
     top: 0;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     right: 0;
     z-index: 2;
     transition: opacity 0.2s ease-in-out;
-    padding: 0 15px;
+/*    padding: 0 15px;*/
     opacity: 0.1;
 }
 .curso_item .t-entry-visual-overlay .t-entry-visual-overlay-in {
@@ -69,7 +104,8 @@
 }
 .curso_item .t-entry-title {
 	color: white;
-    font-size: 22px;
+    /*    font-size: 22px;*/
+    font-size: 37px;
     font-weight: bold;
 }
 .style-light a.curso_link {
@@ -94,6 +130,7 @@ a.curso_link:hover {
     position: absolute;
     bottom: 0;
     max-width: 70%;
+    padding-left: 50px;
 }
 .cat-cursos {
 	color: #ffffff;
@@ -109,12 +146,14 @@ a.curso_link:hover {
     right: 28px;
     top: 5px;
 }
-.workshops .cat-cursos {
-    background-color: #6ec280;
-    border-color: #6ec280;
+.destacar {
+    position: absolute;
+    left: 28px;
+    top: 5px;   
 }
+
 .curso-related-img {
-	min-height: 230px;
+	min-height: 300px;
 	object-fit: cover;
 }
 
@@ -153,7 +192,7 @@ a.curso_link {
 
 @media (max-width: 1098px) {
 	.curso_item .t-entry-title {
-	    font-size: 22px;
+/*	    font-size: 22px;*/
 	}
 	.curso_item {
 	    flex: 0 0 50%;
@@ -163,7 +202,7 @@ a.curso_link {
 }
 @media (max-width: 780px) {
 	.curso_item .t-entry-title {
-	    font-size: 37px;
+/*	    font-size: 37px;*/
 	}
 	.curso_item {
 	    flex: 0 0 100%;
@@ -173,12 +212,16 @@ a.curso_link {
 }
 @media (max-width: 780px) {
 	.curso_item .t-entry-title {
-	    font-size: 22px;
-	}		
+	    font-size: 30px;
+	}	
+    .swiper-slide-active + .swiper-slide {
+        opacity: 0;
+        visibility: hidden;
+    }	
 }	
 @media (max-width: 410px) {
 	.curso_item .t-entry-title {
-	    font-size: 17px;
+	    font-size: 30px;
 	}		
 }
 

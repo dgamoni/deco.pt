@@ -3,6 +3,30 @@ function custom_child_scripts() {
 
 	if ( is_singular('curso') ) {
 
+		// slider
+		wp_enqueue_style(
+			'swiper_min_style', 
+			CORE_URL . '/js/swiper/swiper-bundle.min.css',
+			array(),
+			rand()
+		);
+
+		wp_enqueue_script(
+		    'swiper_min_js',
+		    CORE_URL . '/js/swiper/swiper-bundle.min.js',
+	        array('jquery'), 
+	        rand(),
+	        true  
+		);
+
+		wp_enqueue_script(
+		    'custom_curso_js',
+		    CORE_URL . '/js/custom_curso.js',
+	        array('jquery','swiper_min_js'), 
+	        rand(),
+	        true  
+		);
+
 		wp_enqueue_style(
 			'custom_curso_style', 
 			CORE_URL . '/css/custom_curso_style.css',
