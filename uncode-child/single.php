@@ -594,8 +594,9 @@ while (have_posts()):
 
 	if ( $post_type == 'curso' ) {
 		ob_start();
-			get_template_part('template-parts/download', 'curso');
-			get_template_part('template-parts/related', 'curso');
+			get_template_part('template-parts/part-curso', 'download');
+			//get_template_part('template-parts/part-curso', 'related');
+			get_template_part('template-parts/part-curso', 'related-slider');
 		$content_after_body = ob_get_contents();
 		ob_end_clean();
 	}
