@@ -36,8 +36,11 @@
     margin-top: 36px;
     margin-bottom: 30px;
     width: 100%;
-    height: 300px;
+    max-height: 300px;
     position: relative;
+}
+.main-container .row-container .row-parent .half-internal-gutter .uncont > .swiper-container {
+    margin-top: 36px;
 }
 
 .curso_wrap.column-style {
@@ -82,7 +85,7 @@
 .curso_item .t-entry-visual-overlay {
     position: absolute;
     top: 0;
-    bottom: 0px;
+    bottom: 3px;
     left: 0;
     right: 0;
     z-index: 2;
