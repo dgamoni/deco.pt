@@ -125,7 +125,85 @@ if ( current_user_can('noticias_manager') ) {
     //add_action( 'admin_head', 'hide_post_page_options'  );
 }
 
+// cursos_manager
+
+// Remove Categories and Tags
+add_action('init', 'cursos_manager_remove_tax');
+function cursos_manager_remove_tax() {
+    if ( current_user_can('cursos_manager') ) { 
+        register_taxonomy('category', array());
+        register_taxonomy('post_tag', array());
+    }
+}
+
+function add_cursos_manager_role(){
+    add_role(
+        'cursos_manager',
+        'Cursos Manager',
+        array(           
+            'read_curso' => true,
+            'edit_curso' => true,
+            'delete_curso' => true,
+            'publish_curso' => true,
+            'read_private_curso' => true,
+
+            'upload_files' => true,
+
+            'manage_categories' => true,
+            'manage_cursos' => true,
+            'assign_cursos' => true,
+            'assign_curso_terms' => true,
+        )
+    );
+}
+add_action( 'admin_init', 'add_cursos_manager_role', 4 );
+
+
+function add_cursos_manager_role_caps() {
+    $roles = array('noticias_manager');
+    foreach($roles as $the_role) {
+        $role = get_role($the_role); 
+
+        $role->add_cap( 'read_curso' );
+        $role->add_cap( 'read_private_curso' );
+
+
+        $role->add_cap( 'edit_curso');
+        $role->add_cap( 'edit_private_curso');
+        $role->add_cap( 'edit_published_curso');
+        $role->add_cap( 'edit_others_curso');
+
+        $role->add_cap( 'delete_curso' );
+        $role->add_cap( 'publish_curso' );
 
 
 
+        $role->add_cap( 'manage_categories' );
+        $role->add_cap( 'manage_cursos' );
 
+        $role->add_cap( 'assign_cursos' );
+        $role->add_cap( 'assign_curso_terms' );
+
+        $role->add_cap( 'edit_cursos' );
+        $role->add_cap( 'edit_cursos_terms' );
+    }
+}
+add_action('admin_init', 'add_cursos_manager_role_caps', 5 );
+
+function cptuisupport_override_cursos( $args, $tax_slug, $orig_args ) {
+    // We only want to affect these for one taxonomy, so return early if its not that one
+    if ( 'cursos' !== $tax_slug ) {
+        return $args;
+    }
+
+    // Add in our capabilities setting
+    $args['capabilities'] = [
+        'manage_terms' => 'manage_' . $tax_slug,
+        'edit_terms'   => 'edit_' . $tax_slug,
+        'delete_terms' => 'delete' . $tax_slug,
+        'assign_terms' => 'assign_' . $tax_slug,
+    ];
+    
+    return $args;
+}
+add_action( 'cptui_pre_register_taxonomy', 'cptuisupport_override_cursos', 10, 3 );
