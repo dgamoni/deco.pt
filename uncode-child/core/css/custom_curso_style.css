@@ -251,4 +251,14 @@ a.curso_link {
         font-size: 17px;
     }    		
 }
-
+@media (max-width: 380px) {
+    .curso_item .t-entry-title {
+        font-size: 25px;
+    }
+    .destacar {
+        left: 2px;
+    } 
+    .cat-cursos {
+        right: 13px;
+    }
+}
