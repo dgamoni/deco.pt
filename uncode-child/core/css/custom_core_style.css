@@ -17,3 +17,24 @@
 .accept-wrap .wpcf7-acceptance label  .wpcf7-list-item-label a {
 	color: white;
 }
+
+
+/*https://deco.pt/quero-aconselhamento-de-habitacao-e-energia/*/
+.interactive-participate {
+	display: none !important;
+}
+ul.plan-details-lines.json-list li {
+    white-space: break-spaces;
+}
+.map-wrapper .map-municipalities-wrapper .map-svg path.selected.nodata, 
+.map-wrapper .map-municipalities-wrapper .map-svg g path.selected.nodata,
+.map-wrapper .map-municipalities-wrapper .map-svg g.selected path.nodata {
+	fill: gray;
+}
+
+.map-wrapper .map-municipalities-wrapper .map-svg g path:not(.hide-map-shape).nodata {
+	fill: gray;
+}
+.map-wrapper .map-municipalities-wrapper .map-svg g path.nodata:hover {
+	fill: #0a5f32;
+}

@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="37.8" height="36.4" xmlns:v="https://vecta.io/nano"><linearGradient  gradientUnits="userSpaceOnUse" x1="-269.447" y1="-174.347" x2="-268.74" y2="-173.64"><stop offset="0" stop-color="#e6e6eb"/><stop offset=".174" stop-color="#e2e2e6"/><stop offset=".352" stop-color="#d5d4d8"/><stop offset=".532" stop-color="#c0bfc2"/><stop offset=".714" stop-color="#a4a2a4"/><stop offset=".895" stop-color="#828282"/><stop offset="1" stop-color="#6b6e6e"/></linearGradient><g fill="none" stroke="#9b9594" stroke-width="2.224" stroke-miterlimit="10"><path d="M3.4 29V8.9c0-.9.7-1.5 1.6-1.5h10.8m18.6 10V29"/><path d="M36.7,29H22.8l-1.5,1.5h-3.9L15.8,29H1.1v1.5c0,1.7,1.4,3.1,3.1,3.1h29.4c1.7,0,3.1-1.4,3.1-3.1V29z"/></g><path d="M27 2.7c-5.3 0-9.7 3.3-9.7 7.3 0 1.6.7 3.1 1.8 4.3-.2 1.2-.5 2.6-1 3.8-.2.5.2.9.7.8 2.1-.5 3.7-1.2 4.8-2 1 .3 2.2.5 3.3.5 5.3 0 9.7-3.3 9.7-7.3.1-4.1-4.2-7.4-9.6-7.4" fill="#9b9594"/><path d="M16.6 27.5v-2.3c0-1-2.1-2.3-3.9-2.3-1.7 0-3.9 1.3-3.9 2.3v2.3m3.9-12.4c-1.2 0-2.3.9-2.3 2v1.5c0 1.1 1.1 1.9 2.3 1.9s2.3-.9 2.3-1.9V17c0-1-1.1-1.9-2.3-1.9z" fill="none" stroke="#9b9594" stroke-width="2.224" stroke-miterlimit="10"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="https://vecta.io/nano" width="37.8" height="36.4">
+  <linearGradient gradientUnits="userSpaceOnUse" x1="-269.447" y1="-174.347" x2="-268.74" y2="-173.64">
+    <stop offset="0" stop-color="#e6e6eb"></stop>
+    <stop offset=".174" stop-color="#e2e2e6"></stop>
+    <stop offset=".352" stop-color="#d5d4d8"></stop>
+    <stop offset=".532" stop-color="#c0bfc2"></stop>
+    <stop offset=".714" stop-color="#a4a2a4"></stop>
+    <stop offset=".895" stop-color="#828282"></stop>
+    <stop offset="1" stop-color="#6b6e6e"></stop>
+  </linearGradient>
+  <g fill="none" stroke="#9b9594" stroke-width="2.224" stroke-miterlimit="10">
+    <path d="M3.4 29V8.9c0-.9.7-1.5 1.6-1.5h10.8m18.6 10V29"></path>
+    <path d="M36.7,29H22.8l-1.5,1.5h-3.9L15.8,29H1.1v1.5c0,1.7,1.4,3.1,3.1,3.1h29.4c1.7,0,3.1-1.4,3.1-3.1V29z"></path>
+  </g>
+  <path d="M27 2.7c-5.3 0-9.7 3.3-9.7 7.3 0 1.6.7 3.1 1.8 4.3-.2 1.2-.5 2.6-1 3.8-.2.5.2.9.7.8 2.1-.5 3.7-1.2 4.8-2 1 .3 2.2.5 3.3.5 5.3 0 9.7-3.3 9.7-7.3.1-4.1-4.2-7.4-9.6-7.4" fill="#9b9594"></path>
+  <path d="M16.6 27.5v-2.3c0-1-2.1-2.3-3.9-2.3-1.7 0-3.9 1.3-3.9 2.3v2.3m3.9-12.4c-1.2 0-2.3.9-2.3 2v1.5c0 1.1 1.1 1.9 2.3 1.9s2.3-.9 2.3-1.9V17c0-1-1.1-1.9-2.3-1.9z" fill="none" stroke="#9b9594" stroke-width="2.224" stroke-miterlimit="10"></path>
+</svg>

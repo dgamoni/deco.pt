@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="37.8" height="36.4" xmlns:v="https://vecta.io/nano"><linearGradient  gradientUnits="userSpaceOnUse" x1="-269.447" y1="-174.347" x2="-268.74" y2="-173.64"><stop offset="0" stop-color="#e6e6eb"/><stop offset=".174" stop-color="#e2e2e6"/><stop offset=".352" stop-color="#d5d4d8"/><stop offset=".532" stop-color="#c0bfc2"/><stop offset=".714" stop-color="#a4a2a4"/><stop offset=".895" stop-color="#828282"/><stop offset="1" stop-color="#6b6e6e"/></linearGradient><g fill="none" stroke="#9b9594" stroke-width="2.835" stroke-miterlimit="10"><path d="M35.7 18.2c0 9.3-7.5 16.8-16.8 16.8S2.1 27.5 2.1 18.2 9.6 1.4 18.9 1.4s16.8 7.5 16.8 16.8z"/><path d="M12.2 20.7h7.5m-7.5-3.4h7.5"/><path d="M23.9,15.7c0-2.3-1.9-4.2-4.2-4.2h-0.8c-2.3,0-4.2,1.9-4.2,4.2v5.9c0,2.3,1.9,4.2,4.2,4.2h0.8     c2.3,0,4.2-1.9,4.2-4.2"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="https://vecta.io/nano" width="37.8" height="36.4">
+  <linearGradient gradientUnits="userSpaceOnUse" x1="-269.447" y1="-174.347" x2="-268.74" y2="-173.64">
+    <stop offset="0" stop-color="#e6e6eb"></stop>
+    <stop offset=".174" stop-color="#e2e2e6"></stop>
+    <stop offset=".352" stop-color="#d5d4d8"></stop>
+    <stop offset=".532" stop-color="#c0bfc2"></stop>
+    <stop offset=".714" stop-color="#a4a2a4"></stop>
+    <stop offset=".895" stop-color="#828282"></stop>
+    <stop offset="1" stop-color="#6b6e6e"></stop>
+  </linearGradient>
+  <g fill="none" stroke="#9b9594" stroke-width="2.835" stroke-miterlimit="10">
+    <path d="M35.7 18.2c0 9.3-7.5 16.8-16.8 16.8S2.1 27.5 2.1 18.2 9.6 1.4 18.9 1.4s16.8 7.5 16.8 16.8z"></path>
+    <path d="M12.2 20.7h7.5m-7.5-3.4h7.5"></path>
+    <path d="M23.9,15.7c0-2.3-1.9-4.2-4.2-4.2h-0.8c-2.3,0-4.2,1.9-4.2,4.2v5.9c0,2.3,1.9,4.2,4.2,4.2h0.8     c2.3,0,4.2-1.9,4.2-4.2"></path>
+  </g>
+</svg>

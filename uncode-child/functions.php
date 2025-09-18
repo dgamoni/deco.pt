@@ -37,7 +37,7 @@ function shortcode_lp_ac_map($atts) {
 	$filename = "item-map.php";
 	return includeFile($filename);
 }
-add_shortcode( 'lp_ac_contacts', 'shortcode_lp_ac_contacts');
+add_shortcode( 'lp_ac_contacts', 'shortcode_lp_ac_contacts'); // [lp_ac_contacts]
 function shortcode_lp_ac_contacts($atts) {
 	$filename = "item-contacts.php";
 	return includeFile($filename);
@@ -45,14 +45,67 @@ function shortcode_lp_ac_contacts($atts) {
 //load the LP scripts:
 function lp_ac_enqueue_scripts() {
 	//is_page() accepts page title, page ID and the slug.
-    if(is_page('alteracoes-climaticas')){
-		$compressedFiles = 1;
+    if(is_page('quero-aconselhamento-de-habitacao-e-energia')){
+		$compressedFiles = 0;
 		wp_enqueue_script( 'selectize_script', (site_url() . '/custom-pages/alteracoesclimaticas/scripts/selectize.min.js'), array('jquery'), '', true );
 		if(!$compressedFiles){
-			wp_enqueue_script( 'lp_script', (site_url() . '/custom-pages/alteracoesclimaticas/scripts/main.js'), array('jquery'), '', true );
+			wp_enqueue_script( 'lp_script', (site_url() . '/custom-pages/alteracoesclimaticas/scripts/main.js'), array('jquery'), rand(), true );
 		} else {
-			wp_enqueue_script( 'lp_script', (site_url() . '/custom-pages/alteracoesclimaticas/scripts/lp_ac_js.js'), array('jquery'), '', true );
+			wp_enqueue_script( 'lp_script', (site_url() . '/custom-pages/alteracoesclimaticas/scripts/lp_ac_js.js'), array('jquery'), rand(), true );
 		}
+		wp_localize_script( 'lp_script', 'lp_ac_data', array(
+            'json_url' => site_url() . '/custom-pages/alteracoesclimaticas/json/Contactos_BHE.json',
+        ));
 	}
 }    
 add_action( 'wp_enqueue_scripts', 'lp_ac_enqueue_scripts' );
+
+
+// --- SOLUÇÃO FINAL ELEGANTE: COMPONENTE DE MAPA AUTÓNOMO (CORRIGIDO) ---
+
+/**
+ * 1. Shortcode [mapa_final] que carrega o nosso novo componente autónomo.
+ */
+function shortcode_mapa_autonomo() {
+    ob_start();
+    $caminho_componente = ABSPATH . 'custom-pages/alteracoesclimaticas/mapa-standalone.php';
+
+    if ( file_exists( $caminho_componente ) ) {
+        include $caminho_componente;
+    } else {
+        return 'Erro: Componente do mapa autónomo não foi encontrado.';
+    }
+
+    return ob_get_clean();
+}
+add_shortcode( 'mapa_final', 'shortcode_mapa_autonomo' );
+
+/**
+ * 2. Carrega os scripts JS necessários quando o shortcode [mapa_final] é usado.
+ */
+function carregar_scripts_mapa_autonomo() { // O nome da função está aqui
+    global $post;
+    if ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'mapa_final' ) ) {
+        
+        wp_enqueue_script( 
+            'selectize-script-final', 
+            site_url( '/custom-pages/alteracoesclimaticas/scripts/selectize.min.js' ), 
+            array('jquery'), 
+            null, 
+            true 
+        );
+
+        wp_enqueue_script( 
+            'lp-ac-script-final', 
+            site_url( '/custom-pages/alteracoesclimaticas/scripts/lp_ac_js.js' ), 
+            array('jquery'), 
+            null, 
+            true 
+        );
+    }
+}
+// A linha abaixo está agora CORRIGIDA para usar o nome de função correto.
+add_action( 'wp_enqueue_scripts', 'carregar_scripts_mapa_autonomo' ); 
+
+// --- FIM DA SOLUÇÃO ---
+
