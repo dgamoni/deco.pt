@@ -1,0 +1,29 @@
+[15-Mar-2022 17:02:46 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[15-Mar-2022 17:02:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 59
+[15-Mar-2022 17:02:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 60
+[15-Mar-2022 17:02:46 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 63
+[15-Mar-2022 17:02:46 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[15-Mar-2022 17:02:47 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[15-Mar-2022 17:02:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[15-Mar-2022 17:02:47 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[18-Mar-2022 11:37:03 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[18-Mar-2022 11:37:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[18-Mar-2022 11:37:03 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[26-Apr-2022 21:24:24 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[26-Apr-2022 21:24:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[26-Apr-2022 21:24:24 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[16-May-2022 10:20:38 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[16-May-2022 10:20:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[16-May-2022 10:20:38 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[26-May-2022 21:09:11 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[26-May-2022 21:09:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[26-May-2022 21:09:11 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[26-May-2022 21:09:15 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[26-May-2022 21:09:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[26-May-2022 21:09:15 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[26-May-2022 21:09:20 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[26-May-2022 21:09:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[26-May-2022 21:09:20 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32
+[06-Jul-2022 23:07:29 UTC] PHP Warning:  mysqli::__construct(): (42000/1203): User decopt_wp810 already has more than 'max_user_connections' active connections in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 26
+[06-Jul-2022 23:07:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/ra.php on line 30
+[06-Jul-2022 23:07:29 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home1/decopt/public_html/custom-pages/alteracoesclimaticas/includes/db_connect.php on line 32

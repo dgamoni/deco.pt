@@ -1,0 +1,1 @@
+mergejs -c js_files_list.txt scripts_original.js lp_ac_js.js
