@@ -7,6 +7,35 @@ if(typeof lang === 'undefined') {var lang = "pt";}
 var $municipalities_selectize;
 var captchaDone = false;
 
+var municipality_contacts_json = [];
+
+jQuery(document).ready(function($){
+    if (typeof lp_ac_data !== "undefined") {
+        $.getJSON(lp_ac_data.json_url, function(data){
+            municipality_contacts_json = data;
+            console.log("json loaded1:", municipality_contacts_json.length);
+
+            $('path[data-municipality-id]').each(function(){
+                var $path = $(this);
+                var municipality_id = $path.data('municipality-id');
+                console.log(municipality_id);
+                
+                var match = municipality_contacts_json.find(function(item){
+                    return String(item["Unnamed: 4"]).trim() === String(municipality_id).trim();
+                });
+                console.log(match);
+
+                if (!match || !match["Unnamed: 3"]) {
+                    $path.addClass('nodata');
+                } else {
+                    console.log('Contacts for', municipality_id, ':', match["Unnamed: 3"]);
+                }
+            });
+
+        });
+    }
+});
+
 jQuery(document).ready(function($) {
 	"use strict";
 	
@@ -155,6 +184,7 @@ jQuery(document).ready(function($) {
 		var districtAlias = thisMap.attr("data-district");
 		//now the municipality:
 		var municipality_id = theElement.attr("data-municipality-id");
+		console.log(municipality_id);
 		var municipalityTitle = theElement.attr("data-title");
 		
 		hideRatingThanks();
@@ -198,6 +228,44 @@ jQuery(document).ready(function($) {
 			$(".plan-details-lines [data-item='" + i + "'] .plan-status").removeClass("status-0 status-1 status-na");
 			$(".plan-details-lines [data-item='" + i + "'] .plan-status").addClass("status-" + thisValue).text(thisValue_text).attr("title", thisValue_text);
 		}
+
+		
+
+
+		    var contactos = "";
+		    if (municipality_contacts_json.length > 0) {
+		        
+
+		        var match = municipality_contacts_json.find(function(item){
+				    return String(item["Unnamed: 4"]).trim() === String(municipality_id).trim();
+				});
+		        console.log(match);
+		        if (match) {
+		            contactos = match["Unnamed: 3"]; // contacts
+		        }
+		    }
+
+			if (contactos && contactos.trim() !== "") {
+			    var listItems = contactos
+			        .split("\n")
+			        .map(function(line) {
+			            return "<li>" + line.trim() + "</li>";
+		        });
+ 				$(".plan-details-lines-block").find("ul.json-list").html(listItems);			    
+			    $(".plan-details-lines-block").removeClass("nodata");
+			    $(".plan-details-lines.no-list").hide();
+			    $(".map-wrapper .map-svg path.selected, .map-wrapper .map-svg g path.selected").removeClass("nodata");
+			    $(".map-wrapper .map-svg g.selected path").removeClass("nodata");
+
+			} else {
+			    $(".plan-details-lines-block").find("ul.json-list").html('');
+			    $(".plan-details-lines-block").addClass("nodata");
+			    $(".plan-details-lines.no-list").show();
+			    $(".map-wrapper .map-svg path.selected, .map-wrapper .map-svg g path.selected").addClass("nodata");
+			    $(".map-wrapper .map-svg g.selected path").addClass("nodata");
+			}
+
+
 
 		//the global evaluation:
 		$(".global-evaluation-status span").removeClass();

@@ -16,7 +16,7 @@ function getmainurl1(){
 //NOTE: for now I'm hadrcoding the custom page!
 $lp_location = getmainurl1() . "/" . "custom-pages/alteracoesclimaticas/";
 ?>
-<div role="form" id="contacts-form-wrapper" lang="pt-PT" dir="ltr">
+<div role="form" id="contacts-form-wrapper" style="display:none;" lang="pt-PT" dir="ltr">
 	<div class="screen-reader-response">
 		<p role="status" aria-live="polite" aria-atomic="true"></p>
 		<ul></ul>

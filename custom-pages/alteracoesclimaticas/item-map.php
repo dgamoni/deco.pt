@@ -115,25 +115,28 @@ var plan_details_json_raw = '{"1":["1","1","0","0","1","1","2","Águeda"],"2":["
 					<li data-item="adaptation_plan">Plano de adaptação às alterações climáticas: <span class="plan-status"></span></li>
 					<li data-item="available_site">Disponível no site: <span class="plan-status"></span></li>
 				</ul>
+				<ul class="plan-details-lines json-list">
+				</ul>
 			</div>
-			<div class="global-evaluation-block">
+			<div class="global-evaluation-block" style="display:none;">
 				<div class="global-evaluation-title">Conheça a avaliação global da DECO</div>
 				<div class="global-evaluation-status"><span class="evaluation-1"></span></div>
 			</div>
-			<div class="interactive-rating-block">
+			<div class="interactive-rating-block" style="display:none;">
 				<div class="interactive-rating-box">Avalie o seu Município <ul id="interactive-rating" class="no-list"><li data-rating="1">1</li><li data-rating="2">2</li><li data-rating="3">3</li><li data-rating="4">4</li><li data-rating="5">5</li></ul></div>
 				<div class="rating-result-block">
 					<div class="rating-result-block-inside">
 						<div class="rating-result-box">
 							<div class="">Obrigado por participar nesta ação.</div>
-<div class="rating-result-box-evaluate">Partilhe também connosco o que o seu município pode fazer por si <a href="#" class="bt-interactive-participate bt-participate-small">aqui</a>.<br>
-	Com a sua partilha a DECO vai exigir à câmara municipal que torne o seu município mais sustentável.</div>
+							<div class="rating-result-box-evaluate">Partilhe também connosco o que o seu município pode fazer por si <a href="#" class="bt-interactive-participate bt-participate-small">aqui</a>.<br>
+								Com a sua partilha a DECO vai exigir à câmara municipal que torne o seu município mais sustentável.
+							</div>
 						</div>
 						<div class="rating-result-box-tip"><div class="rating-result-box-tip-inside"></div></div>
 					</div>
 				</div>
 			</div>
-			<div class="interactive-participate">
+			<div class="interactive-participate" style="display:none;">
 				<div class="interactive-participate-inside"><a href="#" class="bt-interactive-participate"><strong>Participe nesta ação</strong></a></div>
 			</div>
 		</div>

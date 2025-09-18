@@ -1,0 +1,219 @@
+[
+  {
+    "LISTA BHE":"ESTRUTURA",
+    "Unnamed: 1":"ENTIDADE",
+    "Unnamed: 2":"PONTO DE SITUAÇÃO",
+    "Unnamed: 3":"CONTACTOS",
+    "Unnamed: 4":"municipality_id"
+  },
+  {
+    "LISTA BHE":"MINHO",
+    "Unnamed: 1":"União de Freguesias de Viana do Castelo",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"União de Freguesias de Viana do Castelo Rua Conde de Aurora, 689\nViana do Castelo, 4900 - 443 Viana do Castelo\n258 824 185\n258 821 083 (DECO)\nsantamariamaior@ufvc.pt\ndeco.minho@deco.pt (DECO)",
+    "Unnamed: 4":"259"
+  },
+  {
+    "LISTA BHE":"MINHO",
+    "Unnamed: 1":"Unidade Local de Saúde de Braga ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Unidade Local de Saúde de Braga\nSete Fontes – São Victor\n4710-243 Braga\n258 821 083 (DECO)\nulsbraga@deco.pt  \ndeco.minho@deco.pt (DECO)",
+    "Unnamed: 4":"36"
+  },
+  {
+    "LISTA BHE":"MINHO",
+    "Unnamed: 1":"Póvoa de Lanhoso ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal da Póvoa de Lanhoso\nAv. da República 58, 4830-519 Póvoa de Lanhoso\n930422324\n258 821 083 (DECO)\nhabitacao@mun-planhoso.pt\ndeco.minho@deco.pt",
+    "Unnamed: 4":"42"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal da Maia",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal da Maia\nPraça Doutor José Vieira de Carvalho, Torre do Lidador, Piso 9\nMaia, 4474-006 Maia\n229 408 794\n223 391 960 (DECO)\ngmiac@cm-maia.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"295"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal de Lamego",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Município de Lamego\nAvenida Padre Alfredo Pinto Teixeira\nLamego, 5100 - 150 Lamego\n254 609 600\n223 391 960 (DECO)\ndeco@cm-lamego.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"306"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal de Macedo de Cavaleiros",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Município de Macedo de Cavaleiros\nEdifício Casa do Povo Rua dos Segadores, n.º 2A, 5340-207 Macedo de Cavaleiros\n278 428 410\n223 391 960 (DECO)\ngae@cm-macedodecavaleiros.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"52"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal de Vila do Conde",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Vila do Conde\nPraça Vasco da Gama, 4480-840 Vila do Conde\nVila do Conde, 4480-840\n252 248 400\n223 391 960 (DECO)\nciac@cm-viladoconde.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"189"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal de Gondomar ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Balcão Único de Gondomar\nPraça do Cidadão, 4420-210 S. Cosme, Gondomar\n224 660 536\n223 391 960 (DECO)\ngac@cm-gondomar.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"297"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal de São João da Madeira ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de São João da Madeira\nAv. Da Liberdade, 3701-502 São João da Madeira\n256 200 218\n223 391 960 (DECO)\nconsumidor@cm-sjm.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"16"
+  },
+  {
+    "LISTA BHE":"NORTE",
+    "Unnamed: 1":"Câmara Municipal de Amarante ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Casa da Portela, Rua Dr. Miguel Pinto Martins, nº35, 4600-090 Amarante\n255 420 233\n223 391 960 (DECO)\nciac@cm-amarante.pt\ndeco.norte@deco.pt (DECO)",
+    "Unnamed: 4":"292"
+  },
+  {
+    "LISTA BHE":"CENTRO",
+    "Unnamed: 1":"Câmara Municipal do Sabugal",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Município do Sabugal\nBiblioteca Municipal do Sabugal -Rua Luís de Camões, Nº 16 Sabugal, 6320-380\n271 752 230\n239 841 004 (DECO)\napoio.consumidor@cm-sabugal.pt\ndeco.centro@deco.pt (DECO)",
+    "Unnamed: 4":"128"
+  },
+  {
+    "LISTA BHE":"CENTRO",
+    "Unnamed: 1":"Câmara Municipal de Penela",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Penela\nPraça Município 13, 3230-267 Penela\nPenela, 3230-267\n239 560 120\n239 841 004 (DECO)\ngeral@cm-penela.pt\ndeco.centro@deco.pt (DECO)",
+    "Unnamed: 4":"84"
+  },
+  {
+    "LISTA BHE":"CENTRO",
+    "Unnamed: 1":"Câmara Municipal de Ferreira do Zêzere",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Ferreira do Zêzere\nPraça Dias Ferreira 38, 2240-341 Ferreira do Zêzere \n249 360 150\n239 841 004 (DECO)\ndeco@cm-ferreiradozezere.pt\ndeco.centro@deco.pt (DECO)",
+    "Unnamed: 4":"227"
+  },
+  {
+    "LISTA BHE":"RIBATEJO E OESTE",
+    "Unnamed: 1":"Câmara Municipal de Santarém",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Município de Santarém\nAntiga Escola Prática de Cavalaria\nSantarém, 2005-246\n243 304 408\n243 329 950 (DECO)\nciac@cm-santarem.pt\ndeco.ribatejoeoeste@deco.pt (DECO)",
+    "Unnamed: 4":"233"
+  },
+  {
+    "LISTA BHE":"RIBATEJO E OESTE",
+    "Unnamed: 1":"Câmara Municipal de Rio Maior ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Loja do Cidadão de Rio Maior\nPraça do Comércio, nº1 e 1A, 2040-251 Rio Maior\n243 999 380\n243 329 950 (DECO)\natendimento.deco@cm-riomaior.pt\ndeco.ribatejoeoeste@deco.pt (DECO)",
+    "Unnamed: 4":"232"
+  },
+  {
+    "LISTA BHE":"RIBATEJO E OESTE",
+    "Unnamed: 1":"Câmara Municipal do Entroncamento",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"CÂMARA MUNICIPAL DO ENTRONCAMENTO\nEspaço Energia\nEdifício Municipal, Nº 15 Praça Marechal Carmona\n2330-080 Entroncamento",
+    "Unnamed: 4":"226"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Avis",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Biblioteca Municipal José Saramago R. 1º de Maio 45 Avis, 7480-116\n939 955 215\n266 744 564 (DECO)\napoio.consumidor@cm-avis.pt\ndeco.alentejo@deco.pt (DECO)",
+    "Unnamed: 4":"166"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Portel",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Portel\nLoja do Munícipe na Rua dos Bombeiros Voluntários de Portel\nPortel, 7220-361\n266 619 030\n266 744 564 (DECO)\ngeral@mail.cm-portel.pt\ndeco.alentejo@deco.pt (DECO)",
+    "Unnamed: 4":"96"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Junta de Freguesia de Fronteira",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Junta de Freguesia de Fronteira\nRua Fr. Manuel Cardoso 39 7460-144 Fronteira\nFronteira, 7460-144\n245 604 291\n266 744 564 (DECO)\njfreg.fronteira@gmail.com\ndeco.alentejo@deco.pt (DECO)",
+    "Unnamed: 4":"171"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Loja de Évora ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"DECO Alentejo\nRua José Elias Garcia Loja 12 A\nÉvora, 7000-609\nTel.: 266 744 564\n(DECO)\ndeco.alentejo@deco.pt",
+    "Unnamed: 4":"92"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Alcácer do Sal\n(CIMAL)",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Alcácer do Sal\nPraça Pedro Nunes 7580-125 Alcácer do Sal\nTelefone: 265 610 040\ngaae@m-alcacerdosal.pt \ndeco.alentejo@deco.pt (DECO)\nLocal de Atendimento: Biblioteca Municipal ",
+    "Unnamed: 4":"238"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Grândola \n(CIMAL)",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Grândola\nUnidade de Desenvolvimento\nParque de Feiras e Exposições,  7570-281 Grândola\n269 750 257\n gae@cm-grandola.pt\ndeco.alentejo@deco.pt (DECO)",
+    "Unnamed: 4":"242"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Odemira\n(CIMAL) ",
+    "Unnamed: 2":null,
+    "Unnamed: 3":"Câmara Municipal de Odemira\nPraça da República 7630-139 Odemira \n283 320 900\ngae@cm-odemira.pt \ndeco.alentejo@deco.pt (DECO)\nLocal de Atendimento: Oficina do Empreendedor ",
+    "Unnamed: 4":"30"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Santiago do Cacém \n(CIMAL)",
+    "Unnamed: 2":null,
+    "Unnamed: 3":"Câmara Municipal de Santiago do Cacém \nGabinete de Apoio ao Empresário\nMercado Municipal, 7540-135, Santiago do Cacém \n269 829 419 \nDDET@cm-santiagocacem.pt\ndeco.alentejo@deco.pt (DECO)",
+    "Unnamed: 4":"246"
+  },
+  {
+    "LISTA BHE":"ALENTEJO",
+    "Unnamed: 1":"Câmara Municipal de Sines \n(CIMAL)",
+    "Unnamed: 2":null,
+    "Unnamed: 3":"Câmara Municipal de Sines \nLargo Ramos da Costa 16,  7520-159 Sines \n269 630 600\n geral@mun-sines.pt\ndeco.alentejo@deco.pt (DECO)",
+    "Unnamed: 4":"250"
+  },
+  {
+    "LISTA BHE":"MADEIRA",
+    "Unnamed: 1":"Junta de Freguesia do Imaculado Coração de Maria",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Junta de Freguesia do Imaculado Coração de Maria\nEstrada dos Marmeleiros, nº18, 9050-216 Funchal\nFunchal, 9050-216\n291 229 659\n968800489 (DECO)\ngeral@jfimaculado.pt\ndeco.madeira@deco.pt (DECO)",
+    "Unnamed: 4":"193"
+  },
+  {
+    "LISTA BHE":"MADEIRA",
+    "Unnamed: 1":"Junta de Freguesia de Machico",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Junta de Freguesia de Machico\nTravessa do Mercado n.º 13\nMachico, Madeira, 9200-097\n291 965 648\n968800489 (DECO)\nsecretaria@jf-machico.pt\ndeco.madeira@deco.pt (DECO)",
+    "Unnamed: 4":"194"
+  },
+  {
+    "LISTA BHE":"SEDE",
+    "Unnamed: 1":"Câmara Municipal de Loures",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Câmara Municipal de Loures\nRua da República, n.º 50, 2670 – 455 Loures\n211 150 992\/3\n213 710 200 (DECO)\nciac@cm-loures.pt\ndecolx@deco.pt (DECO)",
+    "Unnamed: 4":"155"
+  },
+  {
+    "LISTA BHE":"SEDE",
+    "Unnamed: 1":"Câmara Municipal de Sintra ",
+    "Unnamed: 2":"Ativo",
+    "Unnamed: 3":"Espaço de Cidadão de Sintra\nPraça D. Afonso Henriques, n.º 1 R\/C Portela de Sintra  2710-520 Sintra\n213 710 200 (DECO)\nbalcaoenergia.sintra@deco.pt\ndecolx@deco.pt\n",
+    "Unnamed: 4":"160"
+  },
+  {
+    "LISTA BHE":"SEDE",
+    "Unnamed: 1":"Câmara Municipal de Torres Vedras ",
+    "Unnamed: 2":"Ativo ",
+    "Unnamed: 3":"CASI - Sala B, Páteo Amarelo, Rua 9 de Abril, nº11, Loja C, 2560-301 Torres Vedras\n261 310 400\n213 710 200 (DECO)\ngeral@cm-tvedras.pt\ndecolx@deco.pt ",
+    "Unnamed: 4":"162"
+  }
+]
