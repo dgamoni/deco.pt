@@ -115,6 +115,9 @@ var plan_details_json_raw = '{"1":["1","1","0","0","1","1","2","Águeda"],"2":["
 					<li data-item="adaptation_plan">Plano de adaptação às alterações climáticas: <span class="plan-status"></span></li>
 					<li data-item="available_site">Disponível no site: <span class="plan-status"></span></li>
 				</ul>
+				<ul class="plan-details-lines info">
+					<li>Não existe balcão DECO nesta região. Mostra o teu interesse e envia-nos um email para <a href="mailto:decoregioes@deco.pt" target="_blank">decoregioes@deco.pt</a>.</li>
+				</ul>
 				<ul class="plan-details-lines json-list">
 				</ul>
 			</div>

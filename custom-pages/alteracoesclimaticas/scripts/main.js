@@ -15,20 +15,20 @@ jQuery(document).ready(function($){
             municipality_contacts_json = data;
             console.log("json loaded1:", municipality_contacts_json.length);
 
-            $('path[data-municipality-id]').each(function(){
+            $('path[data-municipality-id], g[data-municipality-id]').each(function(){
                 var $path = $(this);
                 var municipality_id = $path.data('municipality-id');
-                console.log(municipality_id);
+                //console.log(municipality_id);
                 
                 var match = municipality_contacts_json.find(function(item){
                     return String(item["Unnamed: 4"]).trim() === String(municipality_id).trim();
                 });
-                console.log(match);
+                //console.log(match);
 
                 if (!match || !match["Unnamed: 3"]) {
                     $path.addClass('nodata');
                 } else {
-                    console.log('Contacts for', municipality_id, ':', match["Unnamed: 3"]);
+                    //console.log('Contacts for', municipality_id, ':', match["Unnamed: 3"]);
                 }
             });
 
@@ -184,7 +184,7 @@ jQuery(document).ready(function($) {
 		var districtAlias = thisMap.attr("data-district");
 		//now the municipality:
 		var municipality_id = theElement.attr("data-municipality-id");
-		console.log(municipality_id);
+		//console.log(municipality_id);
 		var municipalityTitle = theElement.attr("data-title");
 		
 		hideRatingThanks();
@@ -239,30 +239,45 @@ jQuery(document).ready(function($) {
 		        var match = municipality_contacts_json.find(function(item){
 				    return String(item["Unnamed: 4"]).trim() === String(municipality_id).trim();
 				});
-		        console.log(match);
+		        //console.log(match);
 		        if (match) {
 		            contactos = match["Unnamed: 3"]; // contacts
 		        }
 		    }
 
 			if (contactos && contactos.trim() !== "") {
-			    var listItems = contactos
-			        .split("\n")
-			        .map(function(line) {
-			            return "<li>" + line.trim() + "</li>";
-		        });
+			    // var listItems = contactos
+			    //     .split("\n")
+			    //     .map(function(line) {
+			    //         return "<li>" + line.trim() + "</li>";
+		        // });
+				var listItems = contactos
+				    .split("\n")
+				    .map(function(line) {
+				        line = line.trim();
+				        //  email
+				        var emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/;
+				        if(emailRegex.test(line)) {
+				            return '<li><a href="mailto:' + line + '" target="_blank">' + line + '</a></li>';
+				        } else {
+				            return "<li>" + line + "</li>";
+				        }
+			    });
  				$(".plan-details-lines-block").find("ul.json-list").html(listItems);			    
 			    $(".plan-details-lines-block").removeClass("nodata");
 			    $(".plan-details-lines.no-list").hide();
 			    $(".map-wrapper .map-svg path.selected, .map-wrapper .map-svg g path.selected").removeClass("nodata");
 			    $(".map-wrapper .map-svg g.selected path").removeClass("nodata");
+			    $(".plan-details-lines.info").hide();
 
 			} else {
 			    $(".plan-details-lines-block").find("ul.json-list").html('');
 			    $(".plan-details-lines-block").addClass("nodata");
-			    $(".plan-details-lines.no-list").show();
+			    //$(".plan-details-lines.no-list").show();
+			    $(".plan-details-lines.no-list").hide();
 			    $(".map-wrapper .map-svg path.selected, .map-wrapper .map-svg g path.selected").addClass("nodata");
 			    $(".map-wrapper .map-svg g.selected path").addClass("nodata");
+			    $(".plan-details-lines.info").show();
 			}
 
 

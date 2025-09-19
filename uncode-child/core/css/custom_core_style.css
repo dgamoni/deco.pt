@@ -23,7 +23,8 @@
 .interactive-participate {
 	display: none !important;
 }
-ul.plan-details-lines.json-list li {
+ul.plan-details-lines.json-list li,
+ul.plan-details-lines.info li  {
     white-space: break-spaces;
 }
 .map-wrapper .map-municipalities-wrapper .map-svg path.selected.nodata, 
@@ -32,9 +33,20 @@ ul.plan-details-lines.json-list li {
 	fill: gray;
 }
 
-.map-wrapper .map-municipalities-wrapper .map-svg g path:not(.hide-map-shape).nodata {
+.map-wrapper .map-municipalities-wrapper .map-svg g path:not(.hide-map-shape).nodata,
+.map-wrapper .map-municipalities-wrapper .map-svg g.nodata path {
 	fill: gray;
 }
 .map-wrapper .map-municipalities-wrapper .map-svg g path.nodata:hover {
 	fill: #0a5f32;
+}
+.plan-details-lines-block.nodata {
+    border-bottom: none;
+}
+.map-wrapper .map-municipalities-wrapper .map-svg g path.nodata:hover,
+.map-wrapper .map-municipalities-wrapper .map-svg g.nodata:hover path {
+    fill: darkgray;
+}
+.map-wrapper .map-municipalities-block .map-svg g g.nodata:not([id='']):hover>path {
+	fill: darkgray;
 }
