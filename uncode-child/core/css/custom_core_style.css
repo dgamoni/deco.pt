@@ -20,6 +20,7 @@
 
 
 /*https://deco.pt/quero-aconselhamento-de-habitacao-e-energia/*/
+
 .interactive-participate {
 	display: none !important;
 }
@@ -50,3 +51,77 @@ ul.plan-details-lines.info li  {
 .map-wrapper .map-municipalities-block .map-svg g g.nodata:not([id='']):hover>path {
 	fill: darkgray;
 }
+
+/*header slider header_by_post*/
+
+#header_by_post .btn.btn-default.btn-flat {
+	color: #ffffff !important;
+    background-color: #228848 !important;
+    border-color: #228848 !important;
+    font-size: 14px !important;
+}
+
+#header_by_post .btn.btn-default.btn-flat:hover {
+	background-color: transparent !important;
+    border-color: #228848 !important;
+}
+
+#header_by_post .t-entry {
+	position: relative;
+}
+#header_by_post .t-entry:before {
+	 content: '';
+    position: absolute;
+    top: -61px;
+    left: calc(50% - 61px);
+    width: 120px;
+    height: 41px;
+   	background-image: url('../img/Logo-Deco.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#header_by_post .active .tmb .t-entry-visual .t-background-cover {
+	/*    transform: scale(1.2);*/
+	transform: scale(1.2) translate3d(0, -8px, 0);
+    transition: transform 5s ease; 
+}
+
+#header_by_post .active .t-overlay-text {
+	    opacity: 0;
+	    transform: translateY(-150px); 
+	    animation: slideFadeIn 1s ease forwards; 
+
+/*    animation: slideDown 1s ease forwards;*/
+
+    animation-delay: 1s; 
+}
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.page-id-106995 #page-header .uncont {
+	padding-top: 0px !important;
+}
+
+.page-id-84960 #page-header .uncont { 
+    padding-top: 0px !important;
+}
+
+
