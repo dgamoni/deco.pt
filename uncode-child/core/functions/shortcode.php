@@ -136,27 +136,51 @@ function curso_func( $atts ){
 <script>
 	jQuery(document).ready(function($) {
 
-		var taxonomy = '<?php echo $atts['taxonomy'];?>';
-		const releatedSwiper = {};
-		releatedSwiper[taxonomy] = new Swiper('.swiper-container.tax-<?php echo $atts['taxonomy'];?>', {
-			slidesPerView: 1,
-			slidesPerGroup: 1,
-			loop: true,
-			spaceBetween: 30,
-			breakpointsBase: 'container',
-			// effect: 'fade',
-			// centeredSlides: true,
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-			breakpoints: {
-				// when window width is >= 320px
-				768: {
-				  slidesPerView: 2,
-				},
-			}				    
-		});
+		// var taxonomy = '<?php echo $atts['taxonomy'];?>';
+		// const releatedSwiper = {};
+		// releatedSwiper[taxonomy] = new Swiper('.swiper-container.tax-<?php echo $atts['taxonomy'];?>', {
+		// 	slidesPerView: 1,
+		// 	slidesPerGroup: 1,
+		// 	loop: true,
+		// 	spaceBetween: 30,
+		// 	breakpointsBase: 'container',
+		// 	// effect: 'fade',
+		// 	// centeredSlides: true,
+		// 	navigation: {
+		// 		nextEl: ".swiper-button-next",
+		// 		prevEl: ".swiper-button-prev",
+		// 	},
+		// 	breakpoints: {
+		// 		// when window width is >= 320px
+		// 		768: {
+		// 		  slidesPerView: 2,
+		// 		},
+		// 	}				    
+		// });
+
+		function initSwiper() {
+		    if (typeof Swiper !== 'undefined') {
+		        var taxonomy = '<?php echo $atts['taxonomy'];?>';
+		        const releatedSwiper = {};
+		        releatedSwiper[taxonomy] = new Swiper('.swiper-container.tax-<?php echo $atts['taxonomy'];?>', {
+		            slidesPerView: 1,
+		            slidesPerGroup: 1,
+		            loop: true,
+		            spaceBetween: 30,
+		            breakpointsBase: 'container',
+		            navigation: {
+		                nextEl: ".swiper-button-next",
+		                prevEl: ".swiper-button-prev",
+		            },
+		            breakpoints: {
+		                768: { slidesPerView: 2 },
+		            }
+		        });
+		    } else {
+		        setTimeout(initSwiper, 50); 
+		    }
+		}
+		initSwiper();
 
 	});
 </script>
